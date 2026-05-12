@@ -1,0 +1,5 @@
+System,Korean F1,Critical Recall,Hard Negative FPR,Adversarial Exact Recall,Adversarial Covered Recall
+Base OPF,,,,,
+Regex only,,,,,
+LoRA only,,,,,
+Hybrid,0.671,0.8129,1.0,0.5,0.6

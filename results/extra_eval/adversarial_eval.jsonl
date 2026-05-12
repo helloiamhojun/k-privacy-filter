@@ -1,0 +1,10 @@
+{"id": "adv_0001", "text": "주민번호는 900101 - 1234567 입니다.", "spans": [{"start": 6, "end": 22, "label": "account_number", "text": "900101 - 1234567"}], "type": "adversarial"}
+{"id": "adv_0002", "text": "주민번호는 9001011234567 입니다.", "spans": [{"start": 6, "end": 19, "label": "account_number", "text": "9001011234567"}], "type": "adversarial"}
+{"id": "adv_0003", "text": "전화번호는 010 - 1234 - 5678 입니다.", "spans": [{"start": 6, "end": 23, "label": "private_phone", "text": "010 - 1234 - 5678"}], "type": "adversarial"}
+{"id": "adv_0004", "text": "전화번호는 공일공-일이삼사-오육칠팔 입니다.", "spans": [{"start": 6, "end": 19, "label": "private_phone", "text": "공일공-일이삼사-오육칠팔"}], "type": "adversarial"}
+{"id": "adv_0005", "text": "API key는 sk-proj-abcDEF1234567890\nabcdef123456 입니다.", "spans": [{"start": 9, "end": 46, "label": "secret", "text": "sk-proj-abcDEF1234567890\nabcdef123456"}], "type": "adversarial"}
+{"id": "adv_0006", "text": "이름은 김 민 수 입니다.", "spans": [{"start": 4, "end": 9, "label": "private_person", "text": "김 민 수"}], "type": "adversarial"}
+{"id": "adv_0007", "text": "사업자 번호는 123 - 45 - 67890 입니다.", "spans": [{"start": 8, "end": 24, "label": "account_number", "text": "123 - 45 - 67890"}], "type": "adversarial"}
+{"id": "adv_0008", "text": "이메일은 test.user [at] example.com 입니다.", "spans": [{"start": 5, "end": 31, "label": "private_email", "text": "test.user [at] example.com"}], "type": "adversarial"}
+{"id": "adv_0009", "text": "주소는 서울특별시  강남구  테헤란로  123 입니다.", "spans": [{"start": 4, "end": 25, "label": "private_address", "text": "서울특별시  강남구  테헤란로  123"}], "type": "adversarial"}
+{"id": "adv_0010", "text": "토큰은 sk-proj-abc_def-1234567890-XYZ 입니다.", "spans": [{"start": 4, "end": 34, "label": "secret", "text": "sk-proj-abc_def-1234567890-XYZ"}], "type": "adversarial"}

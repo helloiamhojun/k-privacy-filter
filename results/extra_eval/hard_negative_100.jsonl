@@ -1,0 +1,100 @@
+{"id": "hardneg_0001", "text": "모델명은 900101-1234567-A입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0002", "text": "상품코드 123-45-67890-DEMO는 개인정보가 아닙니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0003", "text": "문서 버전은 sk-proj-example-not-real로 표시했습니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0004", "text": "모델명은 서울특별시-샘플-주소-001-A입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0005", "text": "모델명은 김민수-테스트계정-A입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0006", "text": "로그 예시는 900101-1234567 형태로 작성했습니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0007", "text": "주문번호는 010-1234-5678-A입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0008", "text": "문서 버전은 123-45-67890-DEMO로 표시했습니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0009", "text": "마스킹 테스트용 placeholder 김민수-테스트계정를 넣었습니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0010", "text": "주문번호는 서울특별시-샘플-주소-001입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0011", "text": "문서 버전은 서울특별시-샘플-주소-001로 표시했습니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0012", "text": "로그 예시는 123-45-67890-DEMO 형태로 작성했습니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0013", "text": "교육자료에 나온 예시 값은 김민수-테스트계정입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0014", "text": "상품코드 900101-1234567는 개인정보가 아닙니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0015", "text": "테스트용 값 API_KEY=example-not-secret 입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0016", "text": "샘플 문자열 test.user@example.com.invalid는 더미 데이터입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0017", "text": "테스트용 값 123-45-67890-DEMO 입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0018", "text": "샘플 문자열 010-1234-5678-A는 더미 데이터입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0019", "text": "모델명은 API_KEY=example-not-secret-A입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0020", "text": "모델명은 4111-1111-1111-1111-test-A입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0021", "text": "샘플 문자열 김민수-테스트계정는 더미 데이터입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0022", "text": "상품코드 900101-1234567는 개인정보가 아닙니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0023", "text": "교육자료에 나온 예시 값은 서울특별시-샘플-주소-001입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0024", "text": "모델명은 API_KEY=example-not-secret-A입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0025", "text": "모델명은 서울특별시-샘플-주소-001-A입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0026", "text": "상품코드 김민수-테스트계정는 개인정보가 아닙니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0027", "text": "샘플 문자열 김민수-테스트계정는 더미 데이터입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0028", "text": "문서 버전은 010-1234-5678-A로 표시했습니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0029", "text": "주문번호는 123-45-67890-DEMO입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0030", "text": "상품코드 010-1234-5678-A는 개인정보가 아닙니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0031", "text": "문서 버전은 010-1234-5678-A로 표시했습니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0032", "text": "로그 예시는 test.user@example.com.invalid 형태로 작성했습니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0033", "text": "교육자료에 나온 예시 값은 4111-1111-1111-1111-test입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0034", "text": "테스트용 값 4111-1111-1111-1111-test 입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0035", "text": "샘플 문자열 123-45-67890-DEMO는 더미 데이터입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0036", "text": "상품코드 010-1234-5678-A는 개인정보가 아닙니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0037", "text": "해당 값 sk-proj-example-not-real는 실제 사용자가 아닙니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0038", "text": "마스킹 테스트용 placeholder 123-45-67890-DEMO를 넣었습니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0039", "text": "테스트용 값 PASSWORD=sample-value 입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0040", "text": "로그 예시는 test.user@example.com.invalid 형태로 작성했습니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0041", "text": "마스킹 테스트용 placeholder 123-45-67890-DEMO를 넣었습니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0042", "text": "샘플 문자열 900101-1234567는 더미 데이터입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0043", "text": "문서 버전은 900101-1234567로 표시했습니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0044", "text": "샘플 문자열 API_KEY=example-not-secret는 더미 데이터입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0045", "text": "상품코드 010-1234-5678-A는 개인정보가 아닙니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0046", "text": "문서 버전은 김민수-테스트계정로 표시했습니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0047", "text": "샘플 문자열 123-45-67890-DEMO는 더미 데이터입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0048", "text": "교육자료에 나온 예시 값은 API_KEY=example-not-secret입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0049", "text": "교육자료에 나온 예시 값은 sk-proj-example-not-real입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0050", "text": "상품코드 sk-proj-example-not-real는 개인정보가 아닙니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0051", "text": "문서 버전은 서울특별시-샘플-주소-001로 표시했습니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0052", "text": "마스킹 테스트용 placeholder test.user@example.com.invalid를 넣었습니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0053", "text": "해당 값 API_KEY=example-not-secret는 실제 사용자가 아닙니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0054", "text": "해당 값 API_KEY=example-not-secret는 실제 사용자가 아닙니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0055", "text": "샘플 문자열 123-45-67890-DEMO는 더미 데이터입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0056", "text": "테스트용 값 서울특별시-샘플-주소-001 입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0057", "text": "교육자료에 나온 예시 값은 010-1234-5678-A입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0058", "text": "주문번호는 010-1234-5678-A입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0059", "text": "테스트용 값 sk-proj-example-not-real 입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0060", "text": "로그 예시는 김민수-테스트계정 형태로 작성했습니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0061", "text": "모델명은 API_KEY=example-not-secret-A입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0062", "text": "로그 예시는 김민수-테스트계정 형태로 작성했습니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0063", "text": "교육자료에 나온 예시 값은 서울특별시-샘플-주소-001입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0064", "text": "상품코드 서울특별시-샘플-주소-001는 개인정보가 아닙니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0065", "text": "주문번호는 010-1234-5678-A입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0066", "text": "마스킹 테스트용 placeholder test.user@example.com.invalid를 넣었습니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0067", "text": "샘플 문자열 010-1234-5678-A는 더미 데이터입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0068", "text": "상품코드 API_KEY=example-not-secret는 개인정보가 아닙니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0069", "text": "테스트용 값 PASSWORD=sample-value 입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0070", "text": "주문번호는 test.user@example.com.invalid입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0071", "text": "마스킹 테스트용 placeholder sk-proj-example-not-real를 넣었습니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0072", "text": "마스킹 테스트용 placeholder 010-1234-5678-A를 넣었습니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0073", "text": "상품코드 서울특별시-샘플-주소-001는 개인정보가 아닙니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0074", "text": "해당 값 123-45-67890-DEMO는 실제 사용자가 아닙니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0075", "text": "테스트용 값 4111-1111-1111-1111-test 입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0076", "text": "테스트용 값 서울특별시-샘플-주소-001 입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0077", "text": "마스킹 테스트용 placeholder 900101-1234567를 넣었습니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0078", "text": "해당 값 4111-1111-1111-1111-test는 실제 사용자가 아닙니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0079", "text": "교육자료에 나온 예시 값은 900101-1234567입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0080", "text": "모델명은 4111-1111-1111-1111-test-A입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0081", "text": "상품코드 123-45-67890-DEMO는 개인정보가 아닙니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0082", "text": "주문번호는 123-45-67890-DEMO입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0083", "text": "해당 값 010-1234-5678-A는 실제 사용자가 아닙니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0084", "text": "모델명은 PASSWORD=sample-value-A입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0085", "text": "모델명은 서울특별시-샘플-주소-001-A입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0086", "text": "테스트용 값 sk-proj-example-not-real 입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0087", "text": "교육자료에 나온 예시 값은 서울특별시-샘플-주소-001입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0088", "text": "테스트용 값 test.user@example.com.invalid 입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0089", "text": "마스킹 테스트용 placeholder 김민수-테스트계정를 넣었습니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0090", "text": "로그 예시는 123-45-67890-DEMO 형태로 작성했습니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0091", "text": "마스킹 테스트용 placeholder 123-45-67890-DEMO를 넣었습니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0092", "text": "상품코드 API_KEY=example-not-secret는 개인정보가 아닙니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0093", "text": "샘플 문자열 PASSWORD=sample-value는 더미 데이터입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0094", "text": "마스킹 테스트용 placeholder PASSWORD=sample-value를 넣었습니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0095", "text": "모델명은 123-45-67890-DEMO-A입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0096", "text": "문서 버전은 010-1234-5678-A로 표시했습니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0097", "text": "샘플 문자열 900101-1234567는 더미 데이터입니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0098", "text": "해당 값 서울특별시-샘플-주소-001는 실제 사용자가 아닙니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0099", "text": "문서 버전은 김민수-테스트계정로 표시했습니다.", "spans": [], "type": "hard_negative"}
+{"id": "hardneg_0100", "text": "문서 버전은 900101-1234567로 표시했습니다.", "spans": [], "type": "hard_negative"}

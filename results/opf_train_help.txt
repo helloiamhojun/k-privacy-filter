@@ -1,0 +1,73 @@
+usage: opf train [-h] [--dataset-variant {full,message}]
+                 [--validation-dataset VALIDATION_DATASET]
+                 [--validation-dataset-variant {full,message}]
+                 [--validation-split VALIDATION_SPLIT]
+                 [--shuffle-seed SHUFFLE_SEED]
+                 [--max-train-examples MAX_TRAIN_EXAMPLES]
+                 [--max-validation-examples MAX_VALIDATION_EXAMPLES]
+                 [--label-space-json LABEL_SPACE_JSON]
+                 [--checkpoint CHECKPOINT] [--device DEVICE] [--n-ctx N_CTX]
+                 [--epochs EPOCHS] [--batch-size BATCH_SIZE]
+                 [--grad-accum-steps GRAD_ACCUM_STEPS]
+                 [--learning-rate LEARNING_RATE] [--weight-decay WEIGHT_DECAY]
+                 [--max-grad-norm MAX_GRAD_NORM] --output-dir OUTPUT_DIR
+                 [--overwrite-output]
+                 [--output-param-dtype {inherit,bf16,fp32}]
+                 [--summary-name SUMMARY_NAME]
+                 dataset
+
+Fine-tune an existing OPF checkpoint on a local labeled dataset. Outputs a reusable checkpoint directory with config.json and model.safetensors.
+
+options:
+  -h, --help            show this help message and exit
+
+Input / Source:
+  dataset               Local train dataset path or glob (JSON/JSONL(.gz))
+  --dataset-variant {full,message}
+                        Dataset preprocessing variant (full records or per-message expansion).
+  --validation-dataset VALIDATION_DATASET
+                        Optional explicit validation dataset path/glob.
+  --validation-dataset-variant {full,message}
+                        Optional validation dataset variant (defaults to --dataset-variant).
+  --validation-split VALIDATION_SPLIT
+                        If --validation-dataset is omitted, reserve this fraction of train examples for validation (0 disables validation split).
+  --shuffle-seed SHUFFLE_SEED
+                        Random seed used for train/validation split and epoch shuffles.
+  --max-train-examples MAX_TRAIN_EXAMPLES
+                        Optional cap on loaded training examples.
+  --max-validation-examples MAX_VALIDATION_EXAMPLES
+                        Optional cap on loaded validation examples.
+  --label-space-json LABEL_SPACE_JSON
+                        Optional JSON file defining custom labels (span_class_names and/or ner_class_names). Use this for non-default ontologies. When span_class_names is set, include 'O' as the first entry.
+
+Model / Runtime:
+  --checkpoint CHECKPOINT
+                        Override checkpoint directory. If omitted, OPF uses OPF_CHECKPOINT or downloads/reuses /root/.opf/privacy_filter.
+  --device DEVICE       Device to run on
+  --n-ctx N_CTX         Override context window length
+
+Optimization:
+  --epochs EPOCHS       Number of finetuning epochs.
+  --batch-size BATCH_SIZE
+                        Number of same-length windows per optimizer micro-batch.
+  --grad-accum-steps GRAD_ACCUM_STEPS
+                        Gradient accumulation steps before optimizer update.
+  --learning-rate LEARNING_RATE
+                        AdamW learning rate.
+  --weight-decay WEIGHT_DECAY
+                        AdamW weight decay.
+  --max-grad-norm MAX_GRAD_NORM
+                        Gradient clipping max norm (<=0 disables clipping).
+
+Output:
+  --output-dir OUTPUT_DIR
+                        Directory to write finetuned checkpoint artifacts (config.json, model.safetensors, finetune_summary.json, USAGE.txt).
+  --overwrite-output    Allow writing into a non-empty output directory.
+  --output-param-dtype {inherit,bf16,fp32}
+                        Parameter dtype used when writing model.safetensors.
+  --summary-name SUMMARY_NAME
+                        Filename for the written finetuning summary JSON.
+
+Examples:
+  opf train /path/to/train.jsonl --validation-dataset /path/to/validation.jsonl --output-dir /tmp/opf_finetuned
+  opf train /path/to/train.jsonl --checkpoint /path/to/base_ckpt --label-space-json /path/to/custom_label_space.json --output-dir /tmp/opf_custom_labels

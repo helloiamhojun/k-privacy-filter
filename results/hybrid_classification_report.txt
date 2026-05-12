@@ -1,0 +1,14 @@
+                 precision    recall  f1-score   support
+
+ account_number       0.90      0.87      0.88        90
+private_address       0.23      0.23      0.23        31
+   private_date       0.90      0.60      0.72        43
+  private_email       0.97      1.00      0.98        28
+ private_person       0.33      0.14      0.19       108
+  private_phone       0.98      1.00      0.99        42
+    private_url       0.84      0.84      0.84        31
+         secret       0.71      0.71      0.71        49
+
+      micro avg       0.75      0.61      0.67       422
+      macro avg       0.73      0.67      0.69       422
+   weighted avg       0.69      0.61      0.64       422
