@@ -1,0 +1,50 @@
+{"id": "klue_train_02633", "domain": "klue_ner", "text": "로버트 드 니로 왜 이렇게 웃기냐.. ㅋㅋㅋㅋㅋ", "spans": [{"start": 0, "end": 8, "label": "private_person", "text": "로버트 드 니로"}]}
+{"id": "synthetic_04298", "domain": "memo", "text": "서버 토큰 Privacy#8070 삭제 필요.", "spans": [{"start": 6, "end": 18, "label": "secret", "text": "Privacy#8070"}]}
+{"id": "synthetic_00460", "domain": "memo", "text": "집 주소 경상북도 양구군 학동12길 959-32 (영호김면) 택배 메모에 남김.", "spans": [{"start": 5, "end": 33, "label": "private_address", "text": "경상북도 양구군 학동12길 959-32 (영호김면)"}]}
+{"id": "synthetic_02132", "domain": "chat", "text": "회의 날짜는 2025-03-15이고 담당자는 김영식야.", "spans": [{"start": 7, "end": 17, "label": "private_date", "text": "2025-03-15"}, {"start": 25, "end": 28, "label": "private_person", "text": "김영식"}]}
+{"id": "synthetic_02213", "domain": "memo", "text": "개인 메일 jeongung23@example.org로 영수증 받기.", "spans": [{"start": 6, "end": 28, "label": "private_email", "text": "jeongung23@example.org"}]}
+{"id": "synthetic_02250", "domain": "mail", "text": "안녕하세요 한수진님, 답변은 co@example.net로 보내주세요.", "spans": [{"start": 6, "end": 9, "label": "private_person", "text": "한수진"}, {"start": 16, "end": 30, "label": "private_email", "text": "co@example.net"}]}
+{"id": "klue_train_04599", "domain": "klue_ner", "text": "그루도 갠적으론 마음에들지만미니언 진짜진짜 사랑해", "spans": [{"start": 0, "end": 2, "label": "private_person", "text": "그루"}, {"start": 15, "end": 18, "label": "private_person", "text": "미니언"}]}
+{"id": "synthetic_03109", "domain": "mail", "text": "본인확인 번호 050410-3501727는 확인 후 폐기하겠습니다.", "spans": [{"start": 8, "end": 22, "label": "account_number", "text": "050410-3501727"}]}
+{"id": "synthetic_04323", "domain": "dev", "text": "billing_account=970903-4199930 값을 마스킹해야 한다.", "spans": [{"start": 16, "end": 30, "label": "account_number", "text": "970903-4199930"}]}
+{"id": "synthetic_02678", "domain": "mail", "text": "계약일 2022/09/05 기준으로 문서를 작성했습니다.", "spans": [{"start": 4, "end": 14, "label": "private_date", "text": "2022/09/05"}]}
+{"id": "klue_train_01630", "domain": "klue_ner", "text": "22일 새정치민주연합 전병헌 최고위원은 이날 최고위원회의에서 국정원 직원이 운전한 마티즈 차량 사진을 들고나와 조작 의혹을 제기했다.", "spans": [{"start": 12, "end": 15, "label": "private_person", "text": "전병헌"}]}
+{"id": "synthetic_04335", "domain": "mail", "text": "문의 연락처는 010-5110-4906입니다.", "spans": [{"start": 8, "end": 21, "label": "private_phone", "text": "010-5110-4906"}]}
+{"id": "synthetic_03343", "domain": "mail", "text": "첨부파일 암호는 Kfilter$7935입니다.", "spans": [{"start": 9, "end": 21, "label": "secret", "text": "Kfilter$7935"}]}
+{"id": "synthetic_02658", "domain": "chat", "text": "회의 날짜는 2026.04.20이고 담당자는 유시우야.", "spans": [{"start": 7, "end": 17, "label": "private_date", "text": "2026.04.20"}, {"start": 25, "end": 28, "label": "private_person", "text": "유시우"}]}
+{"id": "synthetic_03483", "domain": "mail", "text": "문의 연락처는 031-211-2088입니다.", "spans": [{"start": 8, "end": 20, "label": "private_phone", "text": "031-211-2088"}]}
+{"id": "synthetic_03687", "domain": "dev", "text": "admin_name=김서영, phone=02-808-9316 라인이 남았다.", "spans": [{"start": 11, "end": 14, "label": "private_person", "text": "김서영"}, {"start": 22, "end": 33, "label": "private_phone", "text": "02-808-9316"}]}
+{"id": "klue_train_07833", "domain": "klue_ner", "text": "한달전 장지영 캐릭터와 똑같은일 있었던 사람입니다.~", "spans": [{"start": 4, "end": 7, "label": "private_person", "text": "장지영"}]}
+{"id": "synthetic_00212", "domain": "memo", "text": "서버 토큰 sk-proj-jlGYqyxzJ9oQ0O1VfxIdakEAWJ1fGcn1 삭제 필요.", "spans": [{"start": 6, "end": 46, "label": "secret", "text": "sk-proj-jlGYqyxzJ9oQ0O1VfxIdakEAWJ1fGcn1"}]}
+{"id": "synthetic_01722", "domain": "mail", "text": "배송지는 전라남도 용인시 오금926길 529로 등록되어 있습니다.", "spans": [{"start": 5, "end": 24, "label": "private_address", "text": "전라남도 용인시 오금926길 529"}]}
+{"id": "synthetic_04409", "domain": "chat", "text": "임시 비밀번호 sk-proj-oyEVG0LKLaVGo49sHoKU3rdrsCldisvj로 로그인하면 돼.", "spans": [{"start": 8, "end": 48, "label": "secret", "text": "sk-proj-oyEVG0LKLaVGo49sHoKU3rdrsCldisvj"}]}
+{"id": "synthetic_01865", "domain": "mail", "text": "문의 연락처는 032-871-5303입니다.", "spans": [{"start": 8, "end": 20, "label": "private_phone", "text": "032-871-5303"}]}
+{"id": "synthetic_04621", "domain": "dev", "text": "billing_account=273-58-12533 값을 마스킹해야 한다.", "spans": [{"start": 16, "end": 28, "label": "account_number", "text": "273-58-12533"}]}
+{"id": "synthetic_01208", "domain": "memo", "text": "서버 토큰 Privacy!6523 삭제 필요.", "spans": [{"start": 6, "end": 18, "label": "secret", "text": "Privacy!6523"}]}
+{"id": "klue_train_02453", "domain": "klue_ner", "text": "타잔과 제인의 손맞대는장면은 역대급 영화 명장면으로 꼽아도 손색이없음", "spans": [{"start": 0, "end": 2, "label": "private_person", "text": "타잔"}, {"start": 4, "end": 6, "label": "private_person", "text": "제인"}]}
+{"id": "synthetic_01792", "domain": "chat", "text": "회의 날짜는 2021-02-16이고 담당자는 서정남야.", "spans": [{"start": 7, "end": 17, "label": "private_date", "text": "2021-02-16"}, {"start": 25, "end": 28, "label": "private_person", "text": "서정남"}]}
+{"id": "synthetic_03466", "domain": "dev", "text": "billing_account=S40760924 값을 마스킹해야 한다.", "spans": [{"start": 16, "end": 25, "label": "account_number", "text": "S40760924"}]}
+{"id": "klue_validation_14822", "domain": "klue_ner", "text": "고인의 인도에 대한 애정이 느껴집니다.", "spans": [{"start": 4, "end": 6, "label": "private_address", "text": "인도"}]}
+{"id": "synthetic_03404", "domain": "chat", "text": "조승현한테 02-226-4776로 연락해줘.", "spans": [{"start": 0, "end": 3, "label": "private_person", "text": "조승현"}, {"start": 6, "end": 17, "label": "private_phone", "text": "02-226-4776"}]}
+{"id": "klue_train_08758", "domain": "klue_ner", "text": "부검 결과 이씨의 시신에서는 청산가리가 검출됐다.", "spans": [{"start": 6, "end": 7, "label": "private_person", "text": "이"}]}
+{"id": "synthetic_04410", "domain": "dev", "text": "환경변수 API_KEY=Kfilter#3840는 커밋하면 안 된다.", "spans": [{"start": 13, "end": 25, "label": "secret", "text": "Kfilter#3840"}]}
+{"id": "synthetic_01823", "domain": "dev", "text": "환경변수 API_KEY=sk-proj-6FK3Xr7tdfFkUkdIMHMZoPjprErniUGg는 커밋하면 안 된다.", "spans": [{"start": 13, "end": 53, "label": "secret", "text": "sk-proj-6FK3Xr7tdfFkUkdIMHMZoPjprErniUGg"}]}
+{"id": "synthetic_03153", "domain": "dev", "text": "환경변수 API_KEY=sk-proj-zzTjA40InJ9CzyZG8VaaQUaUK8BYEWGF는 커밋하면 안 된다.", "spans": [{"start": 13, "end": 53, "label": "secret", "text": "sk-proj-zzTjA40InJ9CzyZG8VaaQUaUK8BYEWGF"}]}
+{"id": "synthetic_02012", "domain": "chat", "text": "이서영한테 010-6553-8616로 연락해줘.", "spans": [{"start": 0, "end": 3, "label": "private_person", "text": "이서영"}, {"start": 6, "end": 19, "label": "private_phone", "text": "010-6553-8616"}]}
+{"id": "synthetic_03575", "domain": "dev", "text": "callback_url=https://www.ju.com/ 파라미터에 사용자 정보가 있다.", "spans": [{"start": 13, "end": 32, "label": "private_url", "text": "https://www.ju.com/"}]}
+{"id": "synthetic_03091", "domain": "chat", "text": "내 주민번호는 196-66-29871인데 저장하지 마.", "spans": [{"start": 8, "end": 20, "label": "account_number", "text": "196-66-29871"}]}
+{"id": "klue_train_03199", "domain": "klue_ner", "text": "대구지검은 7일 결심공판에서 계모 임모씨에게 상해치사 혐의로 징역 20년을, 계모의 아동학대를 방치한 혐의로 기소된 A양의 친아버지에게는 징역 7년을 구형했다.", "spans": [{"start": 19, "end": 20, "label": "private_person", "text": "임"}, {"start": 65, "end": 66, "label": "private_person", "text": "A"}]}
+{"id": "klue_train_01200", "domain": "klue_ner", "text": "재밌는데 키아누 리브스가 넘 적게나와 아쉽내요~", "spans": [{"start": 5, "end": 12, "label": "private_person", "text": "키아누 리브스"}]}
+{"id": "synthetic_02394", "domain": "mail", "text": "문의 연락처는 02-875-9140입니다.", "spans": [{"start": 8, "end": 19, "label": "private_phone", "text": "02-875-9140"}]}
+{"id": "synthetic_02002", "domain": "memo", "text": "개인 메일 jno@example.com로 영수증 받기.", "spans": [{"start": 6, "end": 21, "label": "private_email", "text": "jno@example.com"}]}
+{"id": "synthetic_03850", "domain": "dev", "text": "callback_url=https://www.yu.kr/ 파라미터에 사용자 정보가 있다.", "spans": [{"start": 13, "end": 31, "label": "private_url", "text": "https://www.yu.kr/"}]}
+{"id": "synthetic_03728", "domain": "memo", "text": "김미정 생년월일 2025/02/10 확인.", "spans": [{"start": 0, "end": 3, "label": "private_person", "text": "김미정"}, {"start": 9, "end": 19, "label": "private_date", "text": "2025/02/10"}]}
+{"id": "synthetic_00500", "domain": "chat", "text": "박성민 주소가 대전광역시 성북구 테헤란836거리 571 (수진이리) 맞아?", "spans": [{"start": 0, "end": 3, "label": "private_person", "text": "박성민"}, {"start": 8, "end": 37, "label": "private_address", "text": "대전광역시 성북구 테헤란836거리 571 (수진이리)"}]}
+{"id": "synthetic_02957", "domain": "chat", "text": "내 주민번호는 826-76-88002인데 저장하지 마.", "spans": [{"start": 8, "end": 20, "label": "account_number", "text": "826-76-88002"}]}
+{"id": "synthetic_03036", "domain": "memo", "text": "집 주소 부산광역시 동구 선릉082로 850 (상훈오읍) 택배 메모에 남김.", "spans": [{"start": 5, "end": 31, "label": "private_address", "text": "부산광역시 동구 선릉082로 850 (상훈오읍)"}]}
+{"id": "synthetic_04000", "domain": "chat", "text": "임시 비밀번호 sk-proj-yrYjAH12nGQ4Nwmgr23IHfEqftXbxAF0로 로그인하면 돼.", "spans": [{"start": 8, "end": 48, "label": "secret", "text": "sk-proj-yrYjAH12nGQ4Nwmgr23IHfEqftXbxAF0"}]}
+{"id": "synthetic_01721", "domain": "memo", "text": "송혜진 생년월일 2017.10.05 확인.", "spans": [{"start": 0, "end": 3, "label": "private_person", "text": "송혜진"}, {"start": 9, "end": 19, "label": "private_date", "text": "2017.10.05"}]}
+{"id": "synthetic_02175", "domain": "chat", "text": "송정호한테 010-8498-3413로 연락해줘.", "spans": [{"start": 0, "end": 3, "label": "private_person", "text": "송정호"}, {"start": 6, "end": 19, "label": "private_phone", "text": "010-8498-3413"}]}
+{"id": "synthetic_01045", "domain": "chat", "text": "회의 날짜는 2023/11/16이고 담당자는 최승민야.", "spans": [{"start": 7, "end": 17, "label": "private_date", "text": "2023/11/16"}, {"start": 25, "end": 28, "label": "private_person", "text": "최승민"}]}
+{"id": "synthetic_04544", "domain": "mail", "text": "본인확인 번호 515-19-25194는 확인 후 폐기하겠습니다.", "spans": [{"start": 8, "end": 20, "label": "account_number", "text": "515-19-25194"}]}
+{"id": "klue_train_08171", "domain": "klue_ner", "text": "다음은 김 대표의 제 81차 최고위원회의 모두발언 전문입니다.", "spans": [{"start": 4, "end": 5, "label": "private_person", "text": "김"}]}

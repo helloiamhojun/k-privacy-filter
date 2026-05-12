@@ -1,0 +1,100 @@
+{"text": "서버 토큰 sk-proj-0mSfF5kku9xEbKR5YcSfret5l9pwBbPN 삭제 필요.", "spans": {"secret": [[6, 46]]}}
+{"text": "계좌번호 061001-1520931 월세 입금용.", "spans": {"account_number": [[5, 19]]}}
+{"text": "집 주소 세종특별자치시 서구 테헤란4로 177 택배 메모에 남김.", "spans": {"private_address": [[5, 25]]}}
+{"text": "billing_account=207-41-72919 값을 마스킹해야 한다.", "spans": {"account_number": [[16, 28]]}}
+{"text": "admin_name=이숙자, phone=010-9763-4872 라인이 남았다.", "spans": {"private_person": [[11, 14]], "private_phone": [[22, 35]]}}
+{"text": "집 주소 경상북도 성남시 영동대303거리 316 (미경이김면) 택배 메모에 남김.", "spans": {"private_address": [[5, 34]]}}
+{"text": "고보람 주소가 대전광역시 관악구 오금252거리 344 맞아?", "spans": {"private_person": [[0, 3]], "private_address": [[8, 29]]}}
+{"text": "서버 토큰 sk-proj-LPTKYewJhPdOSmr6G2cjOzjM6PiuuHkJ 삭제 필요.", "spans": {"secret": [[6, 46]]}}
+{"text": "회의 날짜는 2021/10/15이고 담당자는 이성현야.", "spans": {"private_date": [[7, 17]], "private_person": [[25, 28]]}}
+{"text": "본인확인 번호 410-11-27424는 확인 후 폐기하겠습니다.", "spans": {"account_number": [[8, 20]]}}
+{"text": "admin_name=장중수, phone=032-124-7330 라인이 남았다.", "spans": {"private_person": [[11, 14]], "private_phone": [[22, 34]]}}
+{"text": "이 링크 http://www.yu.kr/는 개인 페이지니까 공유하지 마.", "spans": {"private_url": [[5, 22]]}}
+{"text": "여대생 청부살해사건'의 주범 윤길자 씨에게 허위진단서를 작성해 준 혐의를 받는 연세대 세브란스병원 박모 교수와 박씨에게 돈을 주고 윤씨에 대한 허위 진단서를 의뢰한 혐의를 받고있는 류모 영남제분 회장에 대한 영장실질심사가 열렸다.", "spans": {"private_person": [[16, 19], [55, 56], [62, 63], [73, 74], [101, 102]]}}
+{"text": "돈이 넘치는 중국 영화판의 거장 감독이 SF와 무협, 추리를 버무려 만든 빅맥.", "spans": {"private_address": [[7, 9]]}}
+{"text": "회의 날짜는 2018-07-21이고 담당자는 김은서야.", "spans": {"private_date": [[7, 17]], "private_person": [[25, 28]]}}
+{"text": "이 글이 논란이 되자 정 의원은 자신의 해당 글은 시위 등에서 통용되는 것으로 그 구호를 인용만 했을 뿐이라고 해명했다.", "spans": {"private_person": [[12, 13]]}}
+{"text": "개인 메일 yujincoe@example.com로 영수증 받기.", "spans": {"private_email": [[6, 26]]}}
+{"text": "address_field=서울특별시 서대문구 오금가 963-96가 디버그 로그에 포함됐다.", "spans": {"private_address": [[14, 35]]}}
+{"text": "address_field=세종특별자치시 종로구 논현94길 606-64가 디버그 로그에 포함됐다.", "spans": {"private_address": [[14, 38]]}}
+{"text": "admin_name=심영희, phone=02-853-8663 라인이 남았다.", "spans": {"private_person": [[11, 14]], "private_phone": [[22, 33]]}}
+{"text": "중국을 주 무대로 배우로 활동 중인 유승준.", "spans": {"private_address": [[0, 2]], "private_person": [[20, 23]]}}
+{"text": "서버 토큰 Project@4735 삭제 필요.", "spans": {"secret": [[6, 18]]}}
+{"text": "이 링크 https://ju.org/는 개인 페이지니까 공유하지 마.", "spans": {"private_url": [[5, 20]]}}
+{"text": "callback_url=https://www.jusighoesa.com/ 파라미터에 사용자 정보가 있다.", "spans": {"private_url": [[13, 40]]}}
+{"text": "7일 사건을 수사 중인 경기도 시흥경찰서 수사본부는 이날 오전 발견된 시신 손에서 지문을 채취, 확인한 결과 중국 동포 한모(42·여)씨로 확인됐다고 밝혔다.", "spans": {"private_address": [[61, 63]], "private_person": [[67, 68]]}}
+{"text": "'변호인'은 5공화국 시절 부산 지역에서 벌어진 최대 공안 사건인 '부림사건'을 모티브로 다룬 영화로, 지난 19일 개봉해 나흘 만에 관객 175만명을 넘어섰습니다.", "spans": {"private_address": [[15, 17]]}}
+{"text": "계좌번호 912-74-24129 월세 입금용.", "spans": {"account_number": [[5, 17]]}}
+{"text": "계약일 2018/05/18 기준으로 문서를 작성했습니다.", "spans": {"private_date": [[4, 14]]}}
+{"text": "admin_name=임지현, phone=031-548-9479 라인이 남았다.", "spans": {"private_person": [[11, 14]], "private_phone": [[22, 34]]}}
+{"text": "김정순한테 02-654-6675로 연락해줘.", "spans": {"private_person": [[0, 3]], "private_phone": [[6, 17]]}}
+{"text": "임시 비밀번호 sk-proj-uUYWLUKB2MH2iNsWqAszDYbVoVSAsbA6로 로그인하면 돼.", "spans": {"secret": [[8, 48]]}}
+{"text": "이러시면 안되는데ㅋㅋㅋㅋ무슨 80년대냐 근데 하나경 이뻐서 만점", "spans": {"private_person": [[25, 28]]}}
+{"text": "개인 메일 yeongja69@example.com로 영수증 받기.", "spans": {"private_email": [[6, 27]]}}
+{"text": "billing_account=S70636527 값을 마스킹해야 한다.", "spans": {"account_number": [[16, 25]]}}
+{"text": "계약일 2025-04-24 기준으로 문서를 작성했습니다.", "spans": {"private_date": [[4, 14]]}}
+{"text": "계좌번호 719-20-88717 월세 입금용.", "spans": {"account_number": [[5, 17]]}}
+{"text": "문의 연락처는 051-259-9520입니다.", "spans": {"private_phone": [[8, 20]]}}
+{"text": "admin_name=김춘자, phone=02-430-4106 라인이 남았다.", "spans": {"private_person": [[11, 14]], "private_phone": [[22, 33]]}}
+{"text": "김춘자 생년월일 2022/11/07 확인.", "spans": {"private_person": [[0, 3]], "private_date": [[9, 19]]}}
+{"text": "첨부파일 암호는 sk-proj-hwWbka6GdAaL6Ca7ThnbBMAOFWuQu9KJ입니다.", "spans": {"secret": [[9, 49]]}}
+{"text": "첨부파일 암호는 Kfilter@2292입니다.", "spans": {"secret": [[9, 21]]}}
+{"text": "첨부파일 암호는 Project$3693입니다.", "spans": {"secret": [[9, 21]]}}
+{"text": "김강우 캐릭터 호감가는 귀여운 캐릭터 ㅎ[나 이런감정처음이야] 명대사 김강우대사", "spans": {"private_person": [[0, 3], [39, 42]]}}
+{"text": "admin_name=박정자, phone=02-573-5085 라인이 남았다.", "spans": {"private_person": [[11, 14]], "private_phone": [[22, 33]]}}
+{"text": "address_field=경기도 당진시 석촌호수로 121 (종수장마을)가 디버그 로그에 포함됐다.", "spans": {"private_address": [[14, 39]]}}
+{"text": "안녕하세요 김지은님, 답변은 gweonareum@example.com로 보내주세요.", "spans": {"private_person": [[6, 9]], "private_email": [[16, 38]]}}
+{"text": "진짜 이건 아님...ㅡㅡ 강은비도 몽정기의 리즈를 잃어버렸어..", "spans": {"private_person": [[14, 17]]}}
+{"text": "본인확인 번호 118-92-85465는 확인 후 폐기하겠습니다.", "spans": {"account_number": [[8, 20]]}}
+{"text": "안녕하세요 장서준님, 답변은 eungyeongi@example.net로 보내주세요.", "spans": {"private_person": [[6, 9]], "private_email": [[16, 38]]}}
+{"text": "다음은 안철수 의원의 '진주의료원 해산 조례안 통과' 관련 입장 전문입니다.", "spans": {"private_person": [[4, 7]], "private_address": [[13, 15]]}}
+{"text": "이 링크 http://www.jusighoesa.com/는 개인 페이지니까 공유하지 마.", "spans": {"private_url": [[5, 31]]}}
+{"text": "안녕하세요 오재현님, 답변은 gi@example.org로 보내주세요.", "spans": {"private_person": [[6, 9]], "private_email": [[16, 30]]}}
+{"text": "본인확인 번호 631115-4290129는 확인 후 폐기하겠습니다.", "spans": {"account_number": [[8, 22]]}}
+{"text": "임시 비밀번호 sk-proj-XPqS961NNJcUlRWLnnlQ7wwstYhE9zvZ로 로그인하면 돼.", "spans": {"secret": [[8, 48]]}}
+{"text": "내 주민번호는 6543-3968-8347-6517인데 저장하지 마.", "spans": {"account_number": [[8, 27]]}}
+{"text": "김미숙한테 051-229-5494로 연락해줘.", "spans": {"private_person": [[0, 3]], "private_phone": [[6, 18]]}}
+{"text": "서버 토큰 sk-proj-VUbVNnmrHVPqjh7IgHIq6XJkt3Hdb4dx 삭제 필요.", "spans": {"secret": [[6, 46]]}}
+{"text": "callback_url=https://jusighoesa.com/ 파라미터에 사용자 정보가 있다.", "spans": {"private_url": [[13, 36]]}}
+{"text": "billing_account=720129-2429259 값을 마스킹해야 한다.", "spans": {"account_number": [[16, 30]]}}
+{"text": "내 주민번호는 601112-2833384인데 저장하지 마.", "spans": {"account_number": [[8, 22]]}}
+{"text": "admin_name=김미숙, phone=051-230-2981 라인이 남았다.", "spans": {"private_person": [[11, 14]], "private_phone": [[22, 34]]}}
+{"text": "callback_url=http://www.yu.org/ 파라미터에 사용자 정보가 있다.", "spans": {"private_url": [[13, 31]]}}
+{"text": "계약일 2018/09/25 기준으로 문서를 작성했습니다.", "spans": {"private_date": [[4, 14]]}}
+{"text": "서버 토큰 Kfilter!6420 삭제 필요.", "spans": {"secret": [[6, 18]]}}
+{"text": "박성현한테 010-3588-8230로 연락해줘.", "spans": {"private_person": [[0, 3]], "private_phone": [[6, 19]]}}
+{"text": "admin_name=이민지, phone=031-243-6122 라인이 남았다.", "spans": {"private_person": [[11, 14]], "private_phone": [[22, 34]]}}
+{"text": "address_field=경상북도 서천군 개포8로 55-58가 디버그 로그에 포함됐다.", "spans": {"private_address": [[14, 33]]}}
+{"text": "한국을 찾은 빌 게이츠 모습을 사진으로 정리해봤습니다.", "spans": {"private_address": [[0, 2]], "private_person": [[7, 12]]}}
+{"text": "25일 머니투데이에 따르면 이날 서울 강남경찰서는 음식점 주차장에 주차된 차량을 들이받은 혐의(도로교통법 위반)로 유명 목사 A 씨를 불구속 입건했다.", "spans": {"private_person": [[70, 71]]}}
+{"text": "김도윤 생년월일 2024.01.13 확인.", "spans": {"private_person": [[0, 3]], "private_date": [[9, 19]]}}
+{"text": "배송지는 인천광역시 북구 양재천가 683 (주원김읍)로 등록되어 있습니다.", "spans": {"private_address": [[5, 29]]}}
+{"text": "서버 토큰 Privacy$1305 삭제 필요.", "spans": {"secret": [[6, 18]]}}
+{"text": "내 주민번호는 958-13-51186인데 저장하지 마.", "spans": {"account_number": [[8, 20]]}}
+{"text": "로그에 user_email=areumgim@example.org 값이 그대로 찍혔다.", "spans": {"private_email": [[15, 35]]}}
+{"text": "우와 진짜 통수쩐다 장혁이 울면서 말할때 나도 울었능데...(배신감)", "spans": {"private_person": [[11, 13]]}}
+{"text": "북부 베이트 하눈에서 어린이 4명을 포함한 일가족 8명이 숨지고 가자시티 동부에서도 2∼13세 어린이 4명이 사망하는 등 곳곳에서 사상자가 잇따랐다.", "spans": {"private_address": [[0, 9], [36, 40]]}}
+{"text": "계약일 2018년 2월 14일 기준으로 문서를 작성했습니다.", "spans": {"private_date": [[4, 16]]}}
+{"text": "집 주소 서울특별시 서구 봉은사거리 908-54 택배 메모에 남김.", "spans": {"private_address": [[5, 26]]}}
+{"text": "장난하냐 ? 이게 잼있다고 ; 내가 조문탁 팬이지만 , 이건아니다", "spans": {"private_person": [[20, 23]]}}
+{"text": "서버 토큰 Dankook@9478 삭제 필요.", "spans": {"secret": [[6, 18]]}}
+{"text": "안녕하세요 이시우님, 답변은 yca@example.org로 보내주세요.", "spans": {"private_person": [[6, 9]], "private_email": [[16, 31]]}}
+{"text": "회의 날짜는 2019년 6월 10일이고 담당자는 김상철야.", "spans": {"private_date": [[7, 19]], "private_person": [[27, 30]]}}
+{"text": "계좌번호 268-39-99654 월세 입금용.", "spans": {"account_number": [[5, 17]]}}
+{"text": "신성훈 주소가 인천광역시 서구 언주43가 238-94 (주원배김읍) 맞아?", "spans": {"private_person": [[0, 3]], "private_address": [[8, 37]]}}
+{"text": "환경변수 API_KEY=sk-proj-8p8IaW2jXenFwbMogjemYyVneVKlkcpI는 커밋하면 안 된다.", "spans": {"secret": [[13, 53]]}}
+{"text": "유가족들은 김 보도국장과의 면담 등을 요구하며 경찰과 대치했다.", "spans": {"private_person": [[6, 7]]}}
+{"text": "첨부파일 암호는 Secure$6190입니다.", "spans": {"secret": [[9, 20]]}}
+{"text": "address_field=세종특별자치시 동대문구 역삼로 527가 디버그 로그에 포함됐다.", "spans": {"private_address": [[14, 34]]}}
+{"text": "address_field=충청북도 성남시 분당구 강남대6거리 437-75 (지영한리)가 디버그 로그에 포함됐다.", "spans": {"private_address": [[14, 47]]}}
+{"text": "미국도 1991년 걸프전쟁 이후 대인지뢰를 사용하지 않고 있지만, 오타와 협약에는 가입을 거부하고 있다.", "spans": {"private_address": [[37, 40]]}}
+{"text": "임시 비밀번호 Dankook#3610로 로그인하면 돼.", "spans": {"secret": [[8, 20]]}}
+{"text": "영화 Smoke\" 를 만든 웨인 왕 작품,...어렸을 때는 감독이 웨인 왕 인 줄도 몰랐는데.... 두 작품 모두 좋음. 스모크, 조이럭클럽\"", "spans": {"private_person": [[15, 19], [37, 41]]}}
+{"text": "세바스토폴에서 현지 주둔 우크라이나 군인들은 부대를 대거 이탈하는 것으로 알려졌다.", "spans": {"private_address": [[0, 5], [14, 19]]}}
+{"text": "callback_url=http://www.yu.kr/ 파라미터에 사용자 정보가 있다.", "spans": {"private_url": [[13, 30]]}}
+{"text": "지난해 8월 중순 웅진홀딩스 윤새봄 상무와 극비리에 결혼식을 올린 유 씨는 결혼 5개월 만에 아들을 낳았다.", "spans": {"private_person": [[16, 19], [37, 38]]}}
+{"text": "환경변수 API_KEY=Secure@5960는 커밋하면 안 된다.", "spans": {"secret": [[13, 24]]}}
+{"text": "계약일 2017/06/23 기준으로 문서를 작성했습니다.", "spans": {"private_date": [[4, 14]]}}
+{"text": "서버 토큰 sk-proj-SrVoEcGGF5rxU7c62TAr2tvkrEnk6qLg 삭제 필요.", "spans": {"secret": [[6, 46]]}}
+{"text": "본인확인 번호 710701-3109236는 확인 후 폐기하겠습니다.", "spans": {"account_number": [[8, 22]]}}
+{"text": "billing_account=M14886070 값을 마스킹해야 한다.", "spans": {"account_number": [[16, 25]]}}
