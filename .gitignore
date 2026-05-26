@@ -2,6 +2,9 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 checkpoints/
+.gradio/
 *.safetensors
 *.pt
 *.bin
+data/raw/*backup*.jsonl
+data/raw/*expanded*.jsonl
