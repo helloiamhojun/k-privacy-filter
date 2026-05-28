@@ -94,12 +94,26 @@ CONTEXT_VALUE_PATTERNS: list[tuple[str, str]] = [
         r"(?P<value>[A-Za-z0-9_!@#$%^&*.\-]{6,})(?![A-Za-z0-9_!@#$%^&*.\-])",
     ),
     (
+        "account_number",
+        r"(?:학번|학생번호|사번|직원번호|회원번호|고객번호)\s*(?:은|는|:|=)?\s*"
+        r"(?P<value>\d{5,12})(?!\d)",
+    ),
+    (
         "private_address",
         rf"(?:주소|배송지|거주지|집 주소|자택 주소|address|address_field)\s*(?:은|는|:|=)?\s*"
         rf"(?P<value>(?:{KOREAN_REGION})\s+"
         r"(?:[가-힣]{1,12}(?:시|군|구)\s+){0,3}"
         r"[가-힣0-9]{1,24}(?:대로|로|길|거리|가)\s*\d{1,5}(?:-\d{1,5})?"
         rf"{ADDRESS_TAIL})",
+    ),
+    (
+        "private_address",
+        rf"(?:주소|배송지|거주지|집 주소|자택 주소|address|address_field)\s*(?:은|는|:|=)?\s*"
+        rf"(?P<value>(?:{KOREAN_REGION})\s+"
+        r"(?:[가-힣]{1,12}(?:시|군|구)\s+){1,3}"
+        r"(?:[가-힣0-9]{1,24}(?:읍|면|동|리)\s*)?"
+        r"\d{1,5}(?:-\d{1,5})?"
+        rf"{ADDRESS_TAIL})(?=야|이야|입니다|이에요|예요|,|\.|\s|$)",
     ),
     (
         "account_number",
