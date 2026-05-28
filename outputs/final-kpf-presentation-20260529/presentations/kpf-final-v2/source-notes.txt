@@ -1,0 +1,34 @@
+Source notes for K-Privacy Filter final deck
+
+Repository evidence:
+- scripts/pipeline.py: final hybrid pipeline entry point.
+- scripts/regex_safety_net.py: Korean regex safety net and contextual false-positive suppression.
+- scripts/demo.py: Gradio demo app.
+- scripts/generate_korean_pii_dataset.py: Korean synthetic dataset generator.
+- scripts/train_korean_pii_token_classifier.py: saveable HuggingFace token-classification fine-tuning script.
+- scripts/evaluate_finetuned_korean_pii.py: standalone fine-tuned checkpoint evaluator.
+- results/results.csv: baseline and hybrid OPF evaluation.
+- results/final_kpf_experiments/final_kpf_offline_report.md: final KPF conservative replay metrics.
+- results/korean_pii_finetune_result.md: fine-tuning and follow-up evaluation.
+
+Key metrics used:
+- Baseline OPF eval300 F1: 0.5945.
+- Existing hybrid eval300 F1: 0.6710.
+- Final KPF conservative replay eval300 F1: 0.6919.
+- Final KPF sampled hard-negative 100 FPR: 0.0000, fixed sampled set only.
+- Final KPF adversarial 10 F1: 0.9000.
+- Fine-tuned standalone synthetic_test F1: 0.9912.
+- Fine-tuned standalone eval300 F1: 0.6052.
+- Fine-tuned standalone hard-negative empty-row FPR: 0.5700.
+
+Git history:
+- bc3fa26 docs: record final retraining attempt result
+- 335e9d6 eval: add final demo success and limitation cases
+- c26f22d eval: add final presentation result table
+- 7565b50 eval: add baseline and hybrid evaluation results
+- 1bc86a3 data: add Korean PII evaluation and training datasets
+- 861f5c1 feat: add privacy filtering pipeline and evaluation scripts
+- 9dedf7c docs: add project overview and requirements
+
+Asset:
+- results/final_presentation_assets/kpf-cover-generated.png is reused as a generated privacy-themed cover asset.

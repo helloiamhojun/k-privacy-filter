@@ -1,0 +1,27 @@
+task mode: create
+primary deck-profile: engineering-platform
+secondary gates: product-platform, security evaluation narrative
+
+required proof objects:
+- final system architecture diagram
+- implementation file map
+- baseline vs final KPF metrics
+- fine-tuning follow-up evaluation and deployment decision
+- live demo path and fallback recording guidance
+- AI/Git collaboration evidence
+- limitations and security roadmap
+
+source and asset requirements:
+- Use current repository files and Colab/Drive result paths as evidence.
+- Use existing generated cover image from results/final_presentation_assets/kpf-cover-generated.png.
+- Do not use invented public logos or unofficial brand marks.
+
+profile-specific QA gates:
+- Technical labels must remain accurate after simplification.
+- Every metric must have a clear scope and avoid overclaiming.
+- Hard-negative FPR must be labeled as sampled fixed-set FPR, not universal FPR.
+- Fine-tuned model score must distinguish synthetic distribution from real/hard-negative evaluation.
+
+known missing inputs:
+- No permanent Gradio URL because Colab share links expire.
+- Git history is summarized from current local repository log.

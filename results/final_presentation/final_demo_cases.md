@@ -1,13 +1,12 @@
-| type                     | id           | input                                                 | masked                                             | explanation                                 |
-|:-------------------------|:-------------|:------------------------------------------------------|:---------------------------------------------------|:--------------------------------------------|
-| success                  | chat_0001    | 주민번호는 900101-1234567이고 절대 공유하지 마.       | 주민번호는 <ACCOUNT_NUMBER>이고 절대 공유하지 마.  | 정형 개인정보를 올바르게 마스킹             |
-| success                  | chat_0002    | 사업자번호 123-45-67890 이거 세금계산서용이야.        | 사업자번호 <ACCOUNT_NUMBER> 이거 세금계산서용이야. | 정형 개인정보를 올바르게 마스킹             |
-| success                  | chat_0012    | 우리 집 전화번호 010-4444-5555도 등록해줘.            | 우리 집 전화번호 <PRIVATE_PHONE>도 등록해줘.       | 정형 개인정보를 올바르게 마스킹             |
-| success                  | chat_0019    | 비밀번호는 xoxb-1234567890-abcdefg으로 임시 설정했어. | 비밀번호는 <SECRET>으로 임시 설정했어.             | 정형 개인정보를 올바르게 마스킹             |
-| limitation_hard_negative | hardneg_0001 | 모델명은 900101-1234567-A입니다.                      | 모델명은 <ACCOUNT_NUMBER>입니다.                   | 실제 개인정보가 아닌데 형식이 비슷해서 오탐 |
-| limitation_hard_negative | hardneg_0003 | 문서 버전은 sk-proj-example-not-real로 표시했습니다.  | 문서 버전은 <SECRET>로 표시했습니다.               | 실제 개인정보가 아닌데 형식이 비슷해서 오탐 |
-| limitation_hard_negative | hardneg_0007 | 주문번호는 010-1234-5678-A입니다.                     | 주문번호는 <ACCOUNT_NUMBER>입니다.                 | 실제 개인정보가 아닌데 형식이 비슷해서 오탐 |
-| limitation_adversarial   | adv_0001     | 주민번호는 900101 - 1234567 입니다.                   | 주민번호는 <ACCOUNT_NUMBER> 입니다.                | 변형된 입력에 대한 탐지 사례                |
-| limitation_adversarial   | adv_0004     | 전화번호는 공일공-일이삼사-오육칠팔 입니다.           | 전화번호는 <PRIVATE_PERSON>                        | 변형된 입력에 대한 탐지 사례                |
-| limitation_adversarial   | adv_0005     | API key는 sk-proj-abcDEF1234567890                    | API key는 <SECRET>                                 | 변형된 입력에 대한 탐지 사례                |
-|                          |              | abcdef123456 입니다.                                  | abcdef123456 입니다.                               |                                             |
+# Final Demo Cases
+
+| type | id | input | expected point |
+|---|---|---|---|
+| success | demo_01 | 주소는 경기도 화성시 동탄역로 150 102동 3804호야. 그리고 내 이름은 최호준이고, api 키는 sk-129slkdjflksjflkdjf83slkdjflskj4e398i야. | 주소, 이름, secret이 마스킹되는지 확인 |
+| success | demo_02 | 아이디는 chjspd고, 비밀번호는 chIghwns1011!@!이야. | 비밀번호가 secret으로 마스킹되는지 확인. 아이디는 정책에 따라 계정 식별자로 처리 가능 |
+| hard_negative | demo_03 | 모델명은 900101-1234567-A입니다. | 실제 주민번호가 아닌 모델명 문맥이므로 최종 KPF에서는 마스킹하지 않는 것이 목표 |
+| success | demo_04 | 김민수 주민번호는 900101-1234567이고 전화는 010-1234-5678입니다. | 주민번호와 전화번호 마스킹 확인 |
+| adversarial | demo_05 | 주민번호는 900101 - 1234567 입니다. | 띄어쓰기 변형 입력에서 탐지되는지 확인 |
+
+주의: 발표 중에는 실제 개인정보를 입력하지 말고 위 가짜 예시만 사용합니다.
+Hard-negative 결과는 고정 샘플 기준으로 설명해야 하며, 전체 오탐률 0이라고 말하지 않습니다.
