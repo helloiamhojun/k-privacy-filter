@@ -1,0 +1,269 @@
+{
+  "eval300": {
+    "existing_hybrid": {
+      "precision": 0.747093023255814,
+      "recall": 0.6090047393364929,
+      "f1": 0.6710182767624021,
+      "covered_recall": 0.7796208530805687,
+      "tp": 257,
+      "fp": 87,
+      "fn": 165,
+      "label_exact_recall": {
+        "account_number": 0.8666666666666667,
+        "private_date": 0.6046511627906976,
+        "private_person": 0.1388888888888889,
+        "private_url": 0.8387096774193549,
+        "private_phone": 1.0,
+        "private_address": 0.22580645161290322,
+        "secret": 0.7142857142857143,
+        "private_email": 1.0
+      },
+      "label_covered_recall": {
+        "account_number": 0.9666666666666667,
+        "private_date": 0.6744186046511628,
+        "private_person": 0.3333333333333333,
+        "private_url": 1.0,
+        "private_phone": 1.0,
+        "private_address": 0.8709677419354839,
+        "secret": 1.0,
+        "private_email": 1.0
+      }
+    },
+    "final_kpf": {
+      "precision": 0.7703488372093024,
+      "recall": 0.6279620853080569,
+      "f1": 0.6919060052219321,
+      "covered_recall": 0.7796208530805687,
+      "tp": 265,
+      "fp": 79,
+      "fn": 157,
+      "label_exact_recall": {
+        "account_number": 0.8666666666666667,
+        "private_date": 0.6046511627906976,
+        "private_person": 0.1388888888888889,
+        "private_url": 1.0,
+        "private_phone": 1.0,
+        "private_address": 0.22580645161290322,
+        "secret": 0.7755102040816326,
+        "private_email": 1.0
+      },
+      "label_covered_recall": {
+        "account_number": 0.9666666666666667,
+        "private_date": 0.6744186046511628,
+        "private_person": 0.3333333333333333,
+        "private_url": 1.0,
+        "private_phone": 1.0,
+        "private_address": 0.8709677419354839,
+        "secret": 1.0,
+        "private_email": 1.0
+      }
+    }
+  },
+  "hard_negative": {
+    "existing_hybrid": {
+      "rows": 100,
+      "flagged": 100,
+      "fpr": 1.0,
+      "examples": [
+        {
+          "id": "hardneg_0001",
+          "text": "\ubaa8\ub378\uba85\uc740 900101-1234567-A\uc785\ub2c8\ub2e4.",
+          "spans": [],
+          "predicted_spans": [
+            {
+              "start": 5,
+              "end": 21,
+              "label": "account_number",
+              "text": "900101-1234567-A",
+              "source": "opf"
+            }
+          ]
+        },
+        {
+          "id": "hardneg_0002",
+          "text": "\uc0c1\ud488\ucf54\ub4dc 123-45-67890-DEMO\ub294 \uac1c\uc778\uc815\ubcf4\uac00 \uc544\ub2d9\ub2c8\ub2e4.",
+          "spans": [],
+          "predicted_spans": [
+            {
+              "start": 3,
+              "end": 22,
+              "label": "account_number",
+              "text": "\ub4dc 123-45-67890-DEMO",
+              "source": "opf"
+            }
+          ]
+        },
+        {
+          "id": "hardneg_0003",
+          "text": "\ubb38\uc11c \ubc84\uc804\uc740 sk-proj-example-not-real\ub85c \ud45c\uc2dc\ud588\uc2b5\ub2c8\ub2e4.",
+          "spans": [],
+          "predicted_spans": [
+            {
+              "start": 7,
+              "end": 31,
+              "label": "secret",
+              "text": "sk-proj-example-not-real",
+              "source": "regex"
+            }
+          ]
+        },
+        {
+          "id": "hardneg_0004",
+          "text": "\ubaa8\ub378\uba85\uc740 \uc11c\uc6b8\ud2b9\ubcc4\uc2dc-\uc0d8\ud50c-\uc8fc\uc18c-001-A\uc785\ub2c8\ub2e4.",
+          "spans": [],
+          "predicted_spans": [
+            {
+              "start": 5,
+              "end": 22,
+              "label": "private_address",
+              "text": "\uc11c\uc6b8\ud2b9\ubcc4\uc2dc-\uc0d8\ud50c-\uc8fc\uc18c-001-A",
+              "source": "opf"
+            }
+          ]
+        },
+        {
+          "id": "hardneg_0005",
+          "text": "\ubaa8\ub378\uba85\uc740 \uae40\ubbfc\uc218-\ud14c\uc2a4\ud2b8\uacc4\uc815-A\uc785\ub2c8\ub2e4.",
+          "spans": [],
+          "predicted_spans": [
+            {
+              "start": 5,
+              "end": 19,
+              "label": "private_person",
+              "text": "\uae40\ubbfc\uc218-\ud14c\uc2a4\ud2b8\uacc4\uc815-A\uc785\ub2c8\ub2e4",
+              "source": "opf"
+            }
+          ]
+        },
+        {
+          "id": "hardneg_0006",
+          "text": "\ub85c\uadf8 \uc608\uc2dc\ub294 900101-1234567 \ud615\ud0dc\ub85c \uc791\uc131\ud588\uc2b5\ub2c8\ub2e4.",
+          "spans": [],
+          "predicted_spans": [
+            {
+              "start": 7,
+              "end": 21,
+              "label": "account_number",
+              "text": "900101-1234567",
+              "source": "regex"
+            }
+          ]
+        },
+        {
+          "id": "hardneg_0007",
+          "text": "\uc8fc\ubb38\ubc88\ud638\ub294 010-1234-5678-A\uc785\ub2c8\ub2e4.",
+          "spans": [],
+          "predicted_spans": [
+            {
+              "start": 6,
+              "end": 21,
+              "label": "account_number",
+              "text": "010-1234-5678-A",
+              "source": "opf"
+            }
+          ]
+        },
+        {
+          "id": "hardneg_0008",
+          "text": "\ubb38\uc11c \ubc84\uc804\uc740 123-45-67890-DEMO\ub85c \ud45c\uc2dc\ud588\uc2b5\ub2c8\ub2e4.",
+          "spans": [],
+          "predicted_spans": [
+            {
+              "start": 7,
+              "end": 25,
+              "label": "account_number",
+              "text": "123-45-67890-DEMO\ub85c",
+              "source": "opf"
+            }
+          ]
+        },
+        {
+          "id": "hardneg_0009",
+          "text": "\ub9c8\uc2a4\ud0b9 \ud14c\uc2a4\ud2b8\uc6a9 placeholder \uae40\ubbfc\uc218-\ud14c\uc2a4\ud2b8\uacc4\uc815\ub97c \ub123\uc5c8\uc2b5\ub2c8\ub2e4.",
+          "spans": [],
+          "predicted_spans": [
+            {
+              "start": 21,
+              "end": 30,
+              "label": "private_person",
+              "text": "\uae40\ubbfc\uc218-\ud14c\uc2a4\ud2b8\uacc4\uc815",
+              "source": "opf"
+            }
+          ]
+        },
+        {
+          "id": "hardneg_0010",
+          "text": "\uc8fc\ubb38\ubc88\ud638\ub294 \uc11c\uc6b8\ud2b9\ubcc4\uc2dc-\uc0d8\ud50c-\uc8fc\uc18c-001\uc785\ub2c8\ub2e4.",
+          "spans": [],
+          "predicted_spans": [
+            {
+              "start": 6,
+              "end": 21,
+              "label": "private_address",
+              "text": "\uc11c\uc6b8\ud2b9\ubcc4\uc2dc-\uc0d8\ud50c-\uc8fc\uc18c-001",
+              "source": "opf"
+            }
+          ]
+        }
+      ]
+    },
+    "final_kpf": {
+      "rows": 100,
+      "flagged": 0,
+      "fpr": 0.0,
+      "examples": []
+    }
+  },
+  "adversarial": {
+    "existing_hybrid": {
+      "precision": 0.5555555555555556,
+      "recall": 0.5,
+      "f1": 0.5263157894736842,
+      "covered_recall": 0.6,
+      "tp": 5,
+      "fp": 4,
+      "fn": 5,
+      "label_exact_recall": {
+        "account_number": 0.6666666666666666,
+        "private_phone": 0.5,
+        "secret": 0.5,
+        "private_person": 0.0,
+        "private_email": 0.0,
+        "private_address": 1.0
+      },
+      "label_covered_recall": {
+        "account_number": 0.6666666666666666,
+        "private_phone": 0.5,
+        "secret": 0.5,
+        "private_person": 1.0,
+        "private_email": 0.0,
+        "private_address": 1.0
+      }
+    },
+    "final_kpf": {
+      "precision": 0.9,
+      "recall": 0.9,
+      "f1": 0.9,
+      "covered_recall": 1.0,
+      "tp": 9,
+      "fp": 1,
+      "fn": 1,
+      "label_exact_recall": {
+        "account_number": 1.0,
+        "private_phone": 1.0,
+        "secret": 1.0,
+        "private_person": 0.0,
+        "private_email": 1.0,
+        "private_address": 1.0
+      },
+      "label_covered_recall": {
+        "account_number": 1.0,
+        "private_phone": 1.0,
+        "secret": 1.0,
+        "private_person": 1.0,
+        "private_email": 1.0,
+        "private_address": 1.0
+      }
+    }
+  }
+}
