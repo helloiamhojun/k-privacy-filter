@@ -4,7 +4,7 @@
 |---|---:|---:|---:|---:|---:|
 | Baseline OPF / Eval300 | 0.6716 | 0.5332 | 0.5945 | - | 0.3284 FPR |
 | Existing hybrid / Eval300 | 0.7471 | 0.6090 | 0.6710 | 0.7796 | 87 FP |
-| Final KPF / Eval300 | 0.7703 | 0.6280 | 0.6919 | 0.7796 | 79 FP |
+| Final KPF / Eval300 | 0.7994 | 0.6706 | 0.7294 | 0.8009 | 71 FP |
 
 | Stress set | Existing hybrid | Final KPF | Interpretation |
 |---|---:|---:|---|

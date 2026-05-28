@@ -15,11 +15,11 @@
 
 | Metric | Baseline OPF | Existing hybrid | Final KPF |
 |---|---:|---:|---:|
-| Eval300 Precision | 0.6716 | 0.7471 | 0.7703 |
-| Eval300 Recall | 0.5332 | 0.6090 | 0.6280 |
-| Eval300 Exact F1 | 0.5945 | 0.6710 | 0.6919 |
-| Eval300 Covered Recall | - | 0.7796 | 0.7796 |
-| Eval300 False Positive | 0.3284 FPR | 87 FP | 79 FP |
+| Eval300 Precision | 0.6716 | 0.7471 | 0.7994 |
+| Eval300 Recall | 0.5332 | 0.6090 | 0.6706 |
+| Eval300 Exact F1 | 0.5945 | 0.6710 | 0.7294 |
+| Eval300 Covered Recall | - | 0.7796 | 0.8009 |
+| Eval300 False Positive | 0.3284 FPR | 87 FP | 71 FP |
 | Hard-negative 100 flagged | - | 100 / 100 | 0 / 100 |
 | Adversarial 10 F1 | - | 0.5263 | 0.9000 |
 

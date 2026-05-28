@@ -75,7 +75,7 @@ Gradio public URL이 나오면 새 탭에서 엽니다.
 ### 2:55-3:20 결과 요약
 말하기:
 
-> 최종 replay 기준 Eval300 F1은 0.6919, hard-negative 100개에서는 0 FP, adversarial 10개에서는 F1 0.9000입니다. Fine-tuning은 저장까지 성공했지만 단독 평가가 불안정해서 최종 배포 후보로 쓰지 않았습니다.
+> 최종 replay 기준 Eval300 F1은 0.7294, hard-negative 100개에서는 0 FP, adversarial 10개에서는 F1 0.9000입니다. Fine-tuning은 저장까지 성공했지만 단독 평가가 불안정해서 최종 배포 후보로 쓰지 않았습니다.
 
 ## 제출 전 체크리스트
 - Colab 또는 Gradio 화면이 보인다.

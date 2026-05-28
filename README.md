@@ -37,7 +37,7 @@ Main evaluation set: 300 Korean examples.
 |---|---:|---:|---:|---:|---:|
 | Baseline OPF / Eval300 | 0.6716 | 0.5332 | 0.5945 | - | 0.3284 FPR |
 | Existing hybrid / Eval300 | 0.7471 | 0.6090 | 0.6710 | 0.7796 | 87 FP |
-| Final KPF / Eval300 | 0.7703 | 0.6280 | 0.6919 | 0.7796 | 79 FP |
+| Final KPF / Eval300 | 0.7994 | 0.6706 | 0.7294 | 0.8009 | 71 FP |
 
 Final KPF executes OPF inference plus the final deterministic layer:
 expanded Korean regex coverage, regex-first span merge, contextual false-positive suppression, and targeted dummy-value suppression.
@@ -106,6 +106,7 @@ Example output:
 - scripts/pipeline.py
 - scripts/regex_safety_net.py
 - scripts/evaluate_final_kpf_offline.py
+- scripts/check_regex_rule_cases.py
 - scripts/demo.py
 - scripts/evaluate_hybrid.py
 - data/raw/korean_eval_300.jsonl
@@ -113,6 +114,7 @@ Example output:
 - results/ablation_baseline_vs_hybrid.md
 - results/final_kpf_experiments/final_experiment_audit.md
 - results/final_kpf_experiments/colab_run_evidence.md
+- results/korean_privacy_rule_sources.md
 - results/final_presentation/K-Privacy-Filter-final-presentation.pptx
 - results/final_presentation/final_presentation_script.md
 - results/final_presentation/final_presentation_easy_script.md

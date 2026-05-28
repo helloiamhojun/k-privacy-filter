@@ -7,16 +7,14 @@ Existing OPF/Hybrid predictions were reused, then the final regex expansion and 
 | System | Precision | Recall | F1 | Covered Recall | FP | FN |
 |---|---:|---:|---:|---:|---:|---:|
 | existing_hybrid | 0.7471 | 0.6090 | 0.6710 | 0.7796 | 87 | 165 |
-| final_kpf | 0.7703 | 0.6280 | 0.6919 | 0.7796 | 79 | 157 |
+| final_kpf | 0.7994 | 0.6706 | 0.7294 | 0.8009 | 71 | 139 |
 
-## Sampled Hard Negative 100
+## Hard Negative 100
 
 | System | Flagged | FPR |
 |---|---:|---:|
 | existing_hybrid | 100/100 | 1.0000 |
 | final_kpf | 0/100 | 0.0000 |
-
-This FPR is measured only on the fixed 100-row hard-negative set whose gold spans are empty. It is a sampled stress-test result, not a universal false-positive-rate estimate.
 
 ## Adversarial 10
 

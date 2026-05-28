@@ -1,7 +1,7 @@
 system,set,precision,recall,exact_f1,covered_recall,false_positive,note
 baseline_opf,eval300,0.6716,0.5332,0.5945,,0.3284 FPR,
 existing_hybrid,eval300,0.7471,0.6090,0.6710,0.7796,87 FP,
-final_kpf,eval300,0.7703,0.6280,0.6919,0.7796,79 FP,
+final_kpf,eval300,0.7994,0.6706,0.7294,0.8009,71 FP,
 existing_hybrid,hard_negative_100,,,,,100/100 flagged,fixed sampled set
 final_kpf,hard_negative_100,,,,,0/100 flagged,fixed sampled set not universal FPR
 existing_hybrid,adversarial_10,,,0.5263,,,

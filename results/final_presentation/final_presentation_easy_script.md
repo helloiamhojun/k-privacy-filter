@@ -21,7 +21,7 @@
 1. 한국어 개인정보는 주소, 주민번호, 계좌, secret처럼 형태가 다양하다고 말합니다.
 2. OPF만 쓰면 한국형 패턴을 놓치거나 예시값을 과하게 잡을 수 있다고 말합니다.
 3. 그래서 OPF + Regex Safety Net + Context Filter를 결합했다고 말합니다.
-4. Eval300 F1은 0.6919, adversarial F1은 0.9000이라고 말합니다.
+4. Eval300 F1은 0.7294, adversarial F1은 0.9000이라고 말합니다.
 5. Hard-negative 100개에서는 0개를 잘못 잡았지만, 전체 오탐률 0은 아니라고 꼭 덧붙입니다.
 6. Fine-tuning은 `model.safetensors` 저장까지 성공했지만 hard-negative 오탐이 높아서 최종본에서 제외했다고 말합니다.
 7. 시연은 Colab에서 `python scripts/demo.py`를 실행하고 Gradio 화면으로 보여줍니다.
