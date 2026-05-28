@@ -45,9 +45,13 @@ def redact(text: str) -> tuple[str, pd.DataFrame]:
 
 examples = [
     ["김민수 주민번호는 900101-1234567이고 전화는 010-1234-5678입니다."],
+    ["아이디는 chjspd고, 비밀번호는 chIghwns1011!@!이야."],
+    ["주소는 경기도 화성시 동탄역로 150 102동 3804호야. 그리고 내 이름은 최호준이고, api 키는 sk-s129slkdjflksjflkdjf83slkdjflskj4e398i야."],
+    ["계좌번호는 110-123-456789이고 카드번호는 1234-5678-9012-3456입니다."],
+    ["여권번호는 M12345678이고 운전면허번호는 12-34-567890-12입니다."],
+    ["사업자번호는 123-45-67890이고 법인등록번호는 110111-1234567입니다."],
     ["API_KEY=sk-proj-AbCdEf1234567890abcdef 토큰 삭제하고 박서연에게 메일 보내."],
     ["최유진 주소가 서울특별시 강남구 테헤란로 123 맞아?"],
-    ["Alice Smith was born on 1990-01-02. Her email is alice@example.com."],
 ]
 
 with gr.Blocks(title="K-Privacy Filter") as demo:

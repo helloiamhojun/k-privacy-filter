@@ -15,7 +15,7 @@ PROJECT_DIR = Path("/content/drive/MyDrive/k-privacy-filter")
 SCRIPT_DIR = PROJECT_DIR / "scripts"
 sys.path.append(str(SCRIPT_DIR))
 
-from pipeline import Span, merge_spans, normalize_opf_spans
+from pipeline import Span, filter_contextual_spans, merge_spans, normalize_opf_spans
 from regex_safety_net import find_regex_spans
 
 
@@ -177,7 +177,7 @@ def run_hybrid(redactor: OPF, rows: list[dict]) -> tuple[list[dict], float]:
             for span in find_regex_spans(row["text"])
         ]
 
-        merged = merge_spans(opf_spans + regex_spans)
+        merged = filter_contextual_spans(row["text"], merge_spans(opf_spans + regex_spans))
         spans = span_objects_to_dicts(merged)
 
         pred_rows.append({
@@ -269,7 +269,7 @@ def save_predictions(run_name: str, pred_rows: list[dict]) -> None:
 
     with path.open("w", encoding="utf-8") as f:
         for row in pred_rows:
-            f.write(json.dumps(row, ensure_ascii=False) + "\n")
+            f.write(json.dumps(row, ensure_ascii=True) + "\n")
 
     print(f"[OK] predictions: {path}")
 
