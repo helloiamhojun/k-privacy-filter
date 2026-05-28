@@ -8,12 +8,12 @@ export async function slide11(presentation, ctx) {
   const cols = [
     ["현재 한계", C.softRed, [
       "synthetic 데이터와 실제 사용자 데이터 사이의 분포 차이",
-      "fine-tuned 단독 모델의 label confusion과 hard-negative 오탐",
-      "소규모 adversarial set으로는 모든 우회 공격을 대표할 수 없음",
+      "규칙형 탐지는 새로운 표현이 나오면 계속 확장 필요",
+      "hard-negative 0은 고정 100개 샘플 기준",
       "Colab/Gradio 환경은 네트워크와 런타임 상태에 영향을 받음",
     ]],
     ["개선 방향", C.softBlue, [
-      "실제 문서/로그 스타일을 반영한 한국형 데이터셋 확장",
+      "공식 범주 기반 rule-pack을 지속 확장",
       "hard-negative를 평가 게이트로 고정해 regression 방지",
       "regex 이후 LLM/분류기 기반 context verifier 추가",
       "CI에서 Eval300, hard-negative, adversarial replay 자동화",
@@ -21,7 +21,7 @@ export async function slide11(presentation, ctx) {
     ["보안 인사이트", C.softGreen, [
       "개인정보 필터는 과소탐과 과대탐이 모두 위험",
       "모델 성능표 하나보다 실패 사례 분석이 더 중요",
-      "한국형 PII는 주민번호뿐 아니라 주소, 계좌, secret까지 봐야 함",
+      "한국형 PII는 고유식별정보뿐 아니라 계정·인증·네트워크 정보까지 봐야 함",
       "최종 산출물은 '완벽한 모델'이 아니라 검증 가능한 방어 체계",
     ]],
   ];

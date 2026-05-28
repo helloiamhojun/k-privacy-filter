@@ -19,4 +19,4 @@
 
 ## Final decision
 Fine-tuning 저장은 성공했지만 단독 모델은 실제 평가와 hard-negative에서 불안정했습니다.
-따라서 최종 시연과 발표의 deploy candidate는 `OpenAI Privacy Filter + Korean Regex Safety Net + Context Filter` hybrid KPF입니다.
+따라서 최종 시연과 발표의 deploy candidate는 `OpenAI Privacy Filter + Korean Privacy Rule Pack + Context Filter` hybrid KPF입니다.

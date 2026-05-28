@@ -14,18 +14,18 @@ export async function slide09(presentation, ctx) {
   bullet(slide, ctx, "네트워크 오류 시 녹화 영상 또는 캡처 결과로 대체", 104, 514, 300);
 
   card(slide, ctx, 500, 212, 690, 380, "#FFFFFF");
-  label(slide, ctx, "시연 입력 3개", 526, 238, 124, C.softTeal);
-  smallText(slide, ctx, "1) 주소 + 이름 + API key", 530, 296, 220, 20, 12, C.ink);
-  smallText(slide, ctx, "주소는 경기도 화성시 동탄역로 150 102동 3804호야. 그리고 내 이름은 최호준이고, api 키는 sk-...야.", 552, 320, 550, 32, 11, C.muted);
-  smallText(slide, ctx, "기대: 주소, 이름, secret이 각각 <PRIVATE_...>로 마스킹", 552, 356, 500, 20, 10.5, C.green);
+  label(slide, ctx, "시연 입력 4개", 526, 238, 124, C.softTeal);
+  smallText(slide, ctx, "1) 계정 + 학번 + 지번 주소", 530, 292, 260, 20, 12, C.ink);
+  smallText(slide, ctx, "내 아이디는 chjspd이고, 비밀번호는 32215116이고, 내 학번은 32215116이고, 내 집 주소는 경기도 용인시 수지구 1336-2야.", 552, 316, 570, 34, 10.5, C.muted);
+  smallText(slide, ctx, "기대: 아이디, 비밀번호, 학번, 지번 주소가 마스킹", 552, 356, 500, 20, 10.5, C.green);
 
-  smallText(slide, ctx, "2) 아이디 + 비밀번호", 530, 400, 220, 20, 12, C.ink);
-  smallText(slide, ctx, "아이디는 chjspd고, 비밀번호는 chIghwns1011!@!이야.", 552, 424, 520, 24, 11, C.muted);
-  smallText(slide, ctx, "기대: 비밀번호는 secret으로 마스킹, 아이디는 정책에 따라 계정 식별자로 처리", 552, 454, 560, 20, 10.5, C.green);
+  smallText(slide, ctx, "2) 인증·네트워크 정보", 530, 396, 260, 20, 12, C.ink);
+  smallText(slide, ctx, "OTP는 123456이고, 접속 IP는 192.168.0.15, MAC주소는 AA:BB:CC:DD:EE:FF입니다.", 552, 420, 560, 24, 10.5, C.muted);
+  smallText(slide, ctx, "기대: OTP, IP, MAC이 각각 마스킹", 552, 450, 560, 20, 10.5, C.green);
 
-  smallText(slide, ctx, "3) Hard-negative", 530, 498, 220, 20, 12, C.ink);
-  smallText(slide, ctx, "모델명은 900101-1234567-A입니다.", 552, 522, 520, 22, 11, C.muted);
-  smallText(slide, ctx, "기대: 실제 주민번호가 아닌 코드형 문맥이면 마스킹하지 않음", 552, 550, 540, 20, 10.5, C.green);
+  smallText(slide, ctx, "3) Hard-negative", 530, 492, 220, 20, 12, C.ink);
+  smallText(slide, ctx, "모델명은 900101-1234567-A입니다. 문서 버전은 sk-proj-example-not-real로 표시했습니다.", 552, 516, 560, 26, 10.5, C.muted);
+  smallText(slide, ctx, "기대: 실제 개인정보가 아닌 반례는 의도적으로 마스킹하지 않음", 552, 548, 540, 20, 10.5, C.green);
 
   ctx.addShape(slide, { x: 94, y: 620, width: 1092, height: 36, fill: C.navy });
   smallText(slide, ctx, "시연 멘트: '이 화면은 정답을 외워서 맞히는 것이 아니라, 입력 문맥과 한국형 패턴을 동시에 확인하는 최종 KPF 경로입니다.'", 124, 630, 1032, 18, 12.5, "#FFFFFF");
