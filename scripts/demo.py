@@ -157,7 +157,7 @@ examples = [
 
 
 CSS = """
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&family=Material+Symbols+Outlined');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&family=Material+Symbols+Outlined');
 
 :root {
   --kpf-bg: #f7f9fb;
@@ -177,10 +177,19 @@ CSS = """
   --kpf-amber-soft: #fff0d7;
 }
 
+html, body {
+  overflow-x: hidden !important;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body, .gradio-container {
   background: var(--kpf-bg) !important;
   color: var(--kpf-ink) !important;
-  font-family: Inter, "Malgun Gothic", system-ui, sans-serif !important;
+  font-family: "Noto Sans KR", Inter, "Malgun Gothic", system-ui, sans-serif !important;
+  letter-spacing: 0 !important;
 }
 
 .gradio-container {
@@ -189,20 +198,30 @@ body, .gradio-container {
   overflow-x: hidden !important;
 }
 
+.gradio-container main,
+.gradio-container .contain,
+.gradio-container .wrap,
+.gradio-container .block,
+.gradio-container .form {
+  min-width: 0 !important;
+  max-width: 100% !important;
+}
+
 .app-shell {
   min-height: 100vh;
   display: grid;
-  grid-template-columns: 260px minmax(0, 1fr);
+  grid-template-columns: 236px minmax(0, 1fr);
   width: 100%;
   max-width: 100vw;
   overflow-x: hidden;
+  gap: 0 !important;
 }
 
 .sidebar {
   min-height: 100vh;
   background: #eef2f6;
   border-right: 1px solid var(--kpf-line);
-  padding: 24px 16px;
+  padding: 24px 18px;
   color: var(--kpf-ink) !important;
 }
 
@@ -210,7 +229,7 @@ body, .gradio-container {
   display: flex;
   gap: 12px;
   align-items: center;
-  margin-bottom: 28px;
+  margin-bottom: 24px;
 }
 
 .brand-mark {
@@ -225,17 +244,18 @@ body, .gradio-container {
 }
 
 .brand-title {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 800;
   line-height: 22px;
   color: var(--kpf-primary) !important;
+  white-space: nowrap;
 }
 
 .brand-subtitle, .nav-caption {
   color: var(--kpf-muted);
-  font-size: 11px;
+  font-size: 10.5px;
   font-weight: 700;
-  letter-spacing: .05em;
+  letter-spacing: .02em;
   text-transform: uppercase;
 }
 
@@ -243,13 +263,13 @@ body, .gradio-container {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 12px;
-  margin-bottom: 8px;
+  padding: 11px 12px;
+  margin-bottom: 7px;
   border-radius: 8px;
   color: var(--kpf-muted);
   font-weight: 700;
   font-size: 12px;
-  letter-spacing: .05em;
+  letter-spacing: 0;
   text-transform: uppercase;
 }
 
@@ -271,25 +291,26 @@ body, .gradio-container {
 
 .workspace {
   min-width: 0;
-  padding: 0 28px 28px;
+  padding: 0 22px 22px;
   overflow-x: hidden;
 }
 
 .topbar {
-  height: 66px;
+  height: 64px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid var(--kpf-line);
-  margin: 0 -28px 24px;
-  padding: 0 28px;
+  margin: 0 -22px 22px;
+  padding: 0 22px;
   background: rgba(247, 249, 251, .94);
 }
 
 .topbar-title {
-  font-size: 24px;
+  font-size: 25px;
   font-weight: 800;
   color: var(--kpf-primary);
+  line-height: 32px;
 }
 
 .status-pill {
@@ -304,7 +325,7 @@ body, .gradio-container {
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: .04em;
+  letter-spacing: 0;
 }
 
 .status-dot {
@@ -317,42 +338,72 @@ body, .gradio-container {
 .panel {
   background: var(--kpf-surface);
   border: 1px solid var(--kpf-line);
-  border-radius: 12px;
+  border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 10px 26px rgba(18, 35, 55, .05);
+  box-shadow: 0 8px 20px rgba(18, 35, 55, .04);
   color: var(--kpf-ink) !important;
+}
+
+.core-grid {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 22px !important;
+  align-items: stretch !important;
+  margin-bottom: 14px !important;
+}
+
+.analysis-grid {
+  display: grid !important;
+  grid-template-columns: minmax(0, 2fr) minmax(300px, .85fr);
+  gap: 22px !important;
+  align-items: start !important;
+}
+
+.core-grid > *,
+.analysis-grid > * {
+  min-width: 0 !important;
+  max-width: 100% !important;
 }
 
 .panel-header {
   border-bottom: 1px solid var(--kpf-line);
-  padding: 13px 16px;
+  padding: 12px 16px;
   background: #fbfcfd;
   color: var(--kpf-primary);
   font-size: 12px;
   font-weight: 800;
-  letter-spacing: .06em;
+  letter-spacing: .01em;
   text-transform: uppercase;
 }
 
 .panel-body {
-  padding: 16px;
+  padding: 14px;
 }
 
 .kpf-input textarea {
-  min-height: 240px !important;
-  border: 0 !important;
+  min-height: 260px !important;
+  border: 1px solid var(--kpf-line) !important;
+  border-radius: 8px !important;
   box-shadow: none !important;
-  font-size: 16px !important;
-  line-height: 1.55 !important;
+  font-size: 17px !important;
+  line-height: 1.62 !important;
   background: #ffffff !important;
   color: var(--kpf-ink) !important;
   -webkit-text-fill-color: var(--kpf-ink) !important;
   caret-color: var(--kpf-primary) !important;
+  padding: 16px 18px !important;
+  font-family: "Noto Sans KR", Inter, "Malgun Gothic", system-ui, sans-serif !important;
 }
 
 .kpf-input textarea::placeholder {
   color: #8a93a0 !important;
   -webkit-text-fill-color: #8a93a0 !important;
+}
+
+.kpf-input textarea:focus {
+  border-color: #8fb6ed !important;
+  outline: 2px solid rgba(143, 182, 237, .28) !important;
+  outline-offset: 0 !important;
 }
 
 .button-row {
@@ -368,6 +419,8 @@ body, .gradio-container {
   border-radius: 8px !important;
   color: white !important;
   font-weight: 800 !important;
+  min-height: 44px !important;
+  font-size: 15px !important;
 }
 
 .kpf-btn-secondary {
@@ -376,19 +429,24 @@ body, .gradio-container {
   border-radius: 8px !important;
   color: var(--kpf-muted) !important;
   font-weight: 800 !important;
+  min-height: 44px !important;
+  font-size: 15px !important;
 }
 
 .masked-result {
-  min-height: 240px;
+  min-height: 260px;
   white-space: pre-wrap;
   word-break: break-word;
-  font-size: 16px;
-  line-height: 1.7;
-  padding: 8px 2px 48px;
+  font-size: 17px;
+  line-height: 1.75;
+  padding: 16px 18px;
+  border: 1px solid transparent;
+  border-radius: 8px;
   background: #ffffff !important;
   color: var(--kpf-ink) !important;
   -webkit-text-fill-color: var(--kpf-ink) !important;
   opacity: 1 !important;
+  font-family: "Noto Sans KR", Inter, "Malgun Gothic", system-ui, sans-serif !important;
 }
 
 .kpf-output,
@@ -409,12 +467,14 @@ body, .gradio-container {
   font-family: "JetBrains Mono", monospace;
   font-size: 13px;
   font-weight: 700;
+  line-height: 1.45;
+  vertical-align: baseline;
 }
 
 .kpf-token small {
   color: inherit;
   opacity: .68;
-  font-family: Inter, sans-serif;
+  font-family: Inter, "Noto Sans KR", sans-serif;
   font-size: 10px;
   font-weight: 800;
   text-transform: uppercase;
@@ -467,7 +527,7 @@ body, .gradio-container {
   color: var(--kpf-muted);
   font-size: 11px;
   font-weight: 800;
-  letter-spacing: .06em;
+  letter-spacing: .01em;
   text-transform: uppercase;
   margin-bottom: 4px;
 }
@@ -535,7 +595,7 @@ body, .gradio-container {
 }
 
 .examples-wrap {
-  margin: 4px 0 20px;
+  margin: 2px 0 18px;
   color: var(--kpf-ink) !important;
 }
 
@@ -545,6 +605,16 @@ body, .gradio-container {
   color: var(--kpf-ink) !important;
   opacity: 1 !important;
   -webkit-text-fill-color: var(--kpf-ink) !important;
+  font-family: "Noto Sans KR", Inter, "Malgun Gothic", system-ui, sans-serif !important;
+  font-size: 14px !important;
+  line-height: 1.35 !important;
+}
+
+.examples-wrap button {
+  border-radius: 8px !important;
+  border-color: var(--kpf-line) !important;
+  padding: 7px 10px !important;
+  max-width: 520px !important;
 }
 
 .gradio-dataframe {
@@ -552,8 +622,18 @@ body, .gradio-container {
   overflow: hidden !important;
 }
 
+@media (min-width: 1280px) {
+  .workspace {
+    padding-right: 28px;
+  }
+}
+
 @media (max-width: 960px) {
   .app-shell {
+    grid-template-columns: 1fr;
+  }
+  .core-grid,
+  .analysis-grid {
     grid-template-columns: 1fr;
   }
   .sidebar {
@@ -603,7 +683,7 @@ with gr.Blocks(**blocks_kwargs) as demo:
                 </header>
                 """
             )
-            with gr.Row(equal_height=True):
+            with gr.Row(equal_height=True, elem_classes=["core-grid"]):
                 with gr.Column(scale=1, elem_classes=["panel"]):
                     gr.HTML('<div class="panel-header">Input Analysis</div>')
                     with gr.Column(elem_classes=["panel-body"]):
@@ -623,7 +703,7 @@ with gr.Blocks(**blocks_kwargs) as demo:
                         output_html = gr.HTML(render_masked_html(""), elem_classes=["kpf-output"])
             with gr.Column(elem_classes=["examples-wrap"]):
                 gr.Examples(examples=examples, inputs=input_text, label="Quick-Launch Test Cases")
-            with gr.Row(equal_height=True):
+            with gr.Row(equal_height=True, elem_classes=["analysis-grid"]):
                 with gr.Column(scale=2, elem_classes=["panel"]):
                     gr.HTML('<div class="panel-header">Detection Spans</div>')
                     spans_table = gr.Dataframe(
