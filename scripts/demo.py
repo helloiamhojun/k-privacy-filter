@@ -370,11 +370,22 @@ body, .gradio-container {
   padding: 14px;
 }
 
+.kpf-input,
+.kpf-input > *,
+.kpf-input label,
+.kpf-input .wrap,
+.kpf-input .container,
+.kpf-input .input-container {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
 .kpf-input textarea {
   min-height: 260px !important;
   border: 1px solid var(--kpf-line) !important;
-  border-radius: 8px !important;
-  box-shadow: none !important;
+  border-radius: 10px !important;
+  box-shadow: 0 6px 18px rgba(18, 35, 55, .05) !important;
   font-size: 17px !important;
   line-height: 1.62 !important;
   background: #ffffff !important;
@@ -392,8 +403,14 @@ body, .gradio-container {
 
 .kpf-input textarea:focus {
   border-color: #8fb6ed !important;
-  outline: 2px solid rgba(143, 182, 237, .28) !important;
-  outline-offset: 0 !important;
+  outline: 0 !important;
+  box-shadow: 0 0 0 3px rgba(143, 182, 237, .24), 0 8px 22px rgba(18, 35, 55, .08) !important;
+}
+
+.kpf-input:focus-within,
+.kpf-input:focus-within *,
+.kpf-input textarea:focus-visible {
+  outline: 0 !important;
 }
 
 .button-row {
@@ -429,14 +446,15 @@ body, .gradio-container {
   word-break: break-word;
   font-size: 17px;
   line-height: 1.75;
-  padding: 16px 18px;
-  border: 1px solid transparent;
-  border-radius: 8px;
+  padding: 18px 20px;
+  border: 1px solid var(--kpf-line);
+  border-radius: 10px;
   background: #ffffff !important;
   color: var(--kpf-ink) !important;
   -webkit-text-fill-color: var(--kpf-ink) !important;
   opacity: 1 !important;
   font-family: "Noto Sans KR", Inter, "Malgun Gothic", system-ui, sans-serif !important;
+  box-shadow: 0 6px 18px rgba(18, 35, 55, .05);
 }
 
 .kpf-output,
