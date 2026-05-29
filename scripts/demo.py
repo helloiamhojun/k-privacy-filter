@@ -146,16 +146,6 @@ def clear() -> tuple[str, str, pd.DataFrame, str]:
     return "", render_masked_html(""), pd.DataFrame(columns=columns), render_summary([], "")
 
 
-examples = [
-    ["내 아이디는 chjspd이고, 비밀번호는 32215116이고, 내 학번은 32215116이고, 내 집 주소는 경기도 용인시 수지구 1336-2야."],
-    ["OTP는 123456이고, 접속 IP는 192.168.0.15, MAC주소는 AA:BB:CC:DD:EE:FF입니다."],
-    ["주소는 경기도 화성시 동탄역로 150 102동 3804호야. 그리고 내 이름은 최호준이고, api 키는 sk-s129slkdjflksjflkdjf83slkdjflskj4e398i야."],
-    ["계좌번호는 110-123-456789이고 카드번호는 1234-5678-9012-3456입니다."],
-    ["모델명은 900101-1234567-A입니다."],
-    ["문서 버전은 sk-proj-example-not-real로 표시했습니다."],
-]
-
-
 CSS = """
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&family=Material+Symbols+Outlined');
 
@@ -594,29 +584,6 @@ body, .gradio-container {
   line-height: 1.45;
 }
 
-.examples-wrap {
-  margin: 2px 0 18px;
-  color: var(--kpf-ink) !important;
-}
-
-.examples-wrap button,
-.examples-wrap button * {
-  background: #ffffff !important;
-  color: var(--kpf-ink) !important;
-  opacity: 1 !important;
-  -webkit-text-fill-color: var(--kpf-ink) !important;
-  font-family: "Noto Sans KR", Inter, "Malgun Gothic", system-ui, sans-serif !important;
-  font-size: 14px !important;
-  line-height: 1.35 !important;
-}
-
-.examples-wrap button {
-  border-radius: 8px !important;
-  border-color: var(--kpf-line) !important;
-  padding: 7px 10px !important;
-  max-width: 520px !important;
-}
-
 .gradio-dataframe {
   border-radius: 12px !important;
   overflow: hidden !important;
@@ -701,8 +668,6 @@ with gr.Blocks(**blocks_kwargs) as demo:
                     gr.HTML('<div class="panel-header">Masked Result</div>')
                     with gr.Column(elem_classes=["panel-body"]):
                         output_html = gr.HTML(render_masked_html(""), elem_classes=["kpf-output"])
-            with gr.Column(elem_classes=["examples-wrap"]):
-                gr.Examples(examples=examples, inputs=input_text, label="Quick-Launch Test Cases")
             with gr.Row(equal_height=True, elem_classes=["analysis-grid"]):
                 with gr.Column(scale=2, elem_classes=["panel"]):
                     gr.HTML('<div class="panel-header">Detection Spans</div>')
