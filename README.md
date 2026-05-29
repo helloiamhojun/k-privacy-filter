@@ -89,6 +89,18 @@ The final demo uses the stable hybrid pipeline: baseline OpenAI Privacy Filter p
 
 ## Demo
 
+Colab setup:
+
+    %cd /content
+    !rm -rf k-privacy-filter
+    !git clone https://github.com/helloiamhojun/k-privacy-filter.git
+    %cd /content/k-privacy-filter
+    !pip install -r requirements.txt
+    !python -c "from opf import OPF; print('OPF import OK')"
+    !python scripts/demo.py
+
+Use the `https://*.gradio.live` URL printed by Gradio. The first OPF run can take longer because the official checkpoint is downloaded if it is not already cached.
+
 Run:
 
     python scripts/demo.py

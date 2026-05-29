@@ -7,3 +7,4 @@ faker
 gradio
 pandas
 accelerate
+git+https://github.com/openai/privacy-filter.git
