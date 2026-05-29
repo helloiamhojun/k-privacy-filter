@@ -103,7 +103,6 @@ flowchart TD
 | 규칙 설계 | 한국 개인정보 표현을 기준으로 정규식 후보를 생성하고 검토 | `regex_safety_net.py` |
 | 실험 자동화 | Colab 실행, 로그 분석, 오류 원인 추적 | Colab 실행 셀, 평가 로그 |
 | 평가 개선 | FP/FN 사례를 분석하고 규칙을 반복 보정 | Eval300, hard-negative, adversarial 결과 |
-| 발표 준비 | 실험 결과를 PPT, 쉬운 발표 대본, 용어집으로 정리 | `results/final_presentation/` |
 | 데모 개선 | UI 오류, 가독성, 라이브 데모 실행 흐름을 반복 수정 | `scripts/demo.py`, `COLAB_LIVE_DEMO.md` |
 
 ### Prompting Log 요약
@@ -129,10 +128,6 @@ flowchart TD
 5. **라이브 데모 UI 개선**
 
    발표 현장에서 보여줄 수 있도록 Gradio UI를 대시보드 형태로 바꾸고, 글자색, 화면 비율, 입력창 테두리, 예시 버튼 제거 등을 반복 수정했습니다.
-
-6. **발표 자료 정리**
-
-   최종 결과를 발표용 PPT, 쉬운 발표 대본, 용어 설명 파일로 정리했습니다.
 
 ### AI 활용 원칙
 
