@@ -186,12 +186,16 @@ body, .gradio-container {
 .gradio-container {
   max-width: none !important;
   padding: 0 !important;
+  overflow-x: hidden !important;
 }
 
 .app-shell {
   min-height: 100vh;
   display: grid;
   grid-template-columns: 260px minmax(0, 1fr);
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 .sidebar {
@@ -199,6 +203,7 @@ body, .gradio-container {
   background: #eef2f6;
   border-right: 1px solid var(--kpf-line);
   padding: 24px 16px;
+  color: var(--kpf-ink) !important;
 }
 
 .brand-block {
@@ -223,6 +228,7 @@ body, .gradio-container {
   font-size: 18px;
   font-weight: 800;
   line-height: 22px;
+  color: var(--kpf-primary) !important;
 }
 
 .brand-subtitle, .nav-caption {
@@ -247,8 +253,13 @@ body, .gradio-container {
   text-transform: uppercase;
 }
 
+.nav-item .material-symbols-outlined {
+  color: currentColor !important;
+  opacity: 1 !important;
+}
+
 .nav-item.active {
-  color: #d7e7ff;
+  color: #ffffff !important;
   background: var(--kpf-primary);
 }
 
@@ -261,6 +272,7 @@ body, .gradio-container {
 .workspace {
   min-width: 0;
   padding: 0 28px 28px;
+  overflow-x: hidden;
 }
 
 .topbar {
@@ -308,6 +320,7 @@ body, .gradio-container {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 10px 26px rgba(18, 35, 55, .05);
+  color: var(--kpf-ink) !important;
 }
 
 .panel-header {
@@ -331,6 +344,15 @@ body, .gradio-container {
   box-shadow: none !important;
   font-size: 16px !important;
   line-height: 1.55 !important;
+  background: #ffffff !important;
+  color: var(--kpf-ink) !important;
+  -webkit-text-fill-color: var(--kpf-ink) !important;
+  caret-color: var(--kpf-primary) !important;
+}
+
+.kpf-input textarea::placeholder {
+  color: #8a93a0 !important;
+  -webkit-text-fill-color: #8a93a0 !important;
 }
 
 .button-row {
@@ -363,6 +385,17 @@ body, .gradio-container {
   font-size: 16px;
   line-height: 1.7;
   padding: 8px 2px 48px;
+  background: #ffffff !important;
+  color: var(--kpf-ink) !important;
+  -webkit-text-fill-color: var(--kpf-ink) !important;
+  opacity: 1 !important;
+}
+
+.kpf-output,
+.kpf-summary,
+.kpf-summary * {
+  color: var(--kpf-ink) !important;
+  opacity: 1 !important;
 }
 
 .kpf-token {
@@ -393,20 +426,23 @@ body, .gradio-container {
 
 .kpf-token-private_person, .kpf-token-private_address, .kpf-token-private_email, .kpf-token-private_phone {
   background: var(--kpf-blue-soft);
-  color: var(--kpf-primary);
+  color: var(--kpf-primary) !important;
   border-color: #adc7f7;
+  -webkit-text-fill-color: var(--kpf-primary) !important;
 }
 
 .kpf-token-account_number, .kpf-token-secret {
   background: var(--kpf-purple-soft);
-  color: var(--kpf-purple);
+  color: var(--kpf-purple) !important;
   border-color: #cab8ff;
+  -webkit-text-fill-color: var(--kpf-purple) !important;
 }
 
 .kpf-token-private_network, .kpf-token-private_location, .kpf-token-private_url, .kpf-token-private_date {
   background: var(--kpf-green-soft);
-  color: var(--kpf-green);
+  color: var(--kpf-green) !important;
   border-color: #9bddc3;
+  -webkit-text-fill-color: var(--kpf-green) !important;
 }
 
 .summary-grid {
@@ -500,6 +536,15 @@ body, .gradio-container {
 
 .examples-wrap {
   margin: 4px 0 20px;
+  color: var(--kpf-ink) !important;
+}
+
+.examples-wrap button,
+.examples-wrap button * {
+  background: #ffffff !important;
+  color: var(--kpf-ink) !important;
+  opacity: 1 !important;
+  -webkit-text-fill-color: var(--kpf-ink) !important;
 }
 
 .gradio-dataframe {
@@ -575,7 +620,7 @@ with gr.Blocks(**blocks_kwargs) as demo:
                 with gr.Column(scale=1, elem_classes=["panel"]):
                     gr.HTML('<div class="panel-header">Masked Result</div>')
                     with gr.Column(elem_classes=["panel-body"]):
-                        output_html = gr.HTML(render_masked_html(""))
+                        output_html = gr.HTML(render_masked_html(""), elem_classes=["kpf-output"])
             with gr.Column(elem_classes=["examples-wrap"]):
                 gr.Examples(examples=examples, inputs=input_text, label="Quick-Launch Test Cases")
             with gr.Row(equal_height=True):
@@ -588,7 +633,7 @@ with gr.Blocks(**blocks_kwargs) as demo:
                         interactive=False,
                     )
                 with gr.Column(scale=1):
-                    summary_html = gr.HTML(render_summary([], ""))
+                    summary_html = gr.HTML(render_summary([], ""), elem_classes=["kpf-summary"])
 
     run_btn.click(fn=redact, inputs=input_text, outputs=[output_html, spans_table, summary_html])
     clear_btn.click(fn=clear, inputs=None, outputs=[input_text, output_html, spans_table, summary_html])
