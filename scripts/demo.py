@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import html
+import inspect
 import re
 import sys
 from collections import Counter
@@ -520,7 +521,12 @@ body, .gradio-container {
 """
 
 
-with gr.Blocks(title="K-Privacy Filter Dashboard") as demo:
+blocks_kwargs = {"title": "K-Privacy Filter Dashboard"}
+if "css" in inspect.signature(gr.Blocks).parameters:
+    blocks_kwargs["css"] = CSS
+
+
+with gr.Blocks(**blocks_kwargs) as demo:
     with gr.Row(elem_classes=["app-shell"]):
         with gr.Column(scale=0, min_width=260, elem_classes=["sidebar"]):
             gr.HTML(
@@ -588,4 +594,7 @@ with gr.Blocks(title="K-Privacy Filter Dashboard") as demo:
     clear_btn.click(fn=clear, inputs=None, outputs=[input_text, output_html, spans_table, summary_html])
 
 if __name__ == "__main__":
-    demo.launch(share=True, debug=True, css=CSS)
+    launch_kwargs = {"share": True, "debug": True}
+    if "css" in inspect.signature(gr.Blocks.launch).parameters:
+        launch_kwargs["css"] = CSS
+    demo.launch(**launch_kwargs)
