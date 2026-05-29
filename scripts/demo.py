@@ -375,10 +375,16 @@ body, .gradio-container {
 .kpf-input label,
 .kpf-input .wrap,
 .kpf-input .container,
-.kpf-input .input-container {
+.kpf-input .input-container,
+.kpf-input .block,
+.kpf-input .form,
+.kpf-input [class*="wrap"],
+.kpf-input [class*="container"] {
   background: transparent !important;
   border: 0 !important;
   box-shadow: none !important;
+  outline: 0 !important;
+  padding: 0 !important;
 }
 
 .kpf-input textarea {
@@ -394,6 +400,8 @@ body, .gradio-container {
   caret-color: var(--kpf-primary) !important;
   padding: 16px 18px !important;
   font-family: "Noto Sans KR", Inter, "Malgun Gothic", system-ui, sans-serif !important;
+  display: block !important;
+  width: 100% !important;
 }
 
 .kpf-input textarea::placeholder {
@@ -675,6 +683,7 @@ with gr.Blocks(**blocks_kwargs) as demo:
                         input_text = gr.Textbox(
                             label="",
                             show_label=False,
+                            container=False,
                             lines=10,
                             placeholder="개인정보가 포함된 한국어 문장을 입력하세요. 예: 홍길동 고객님의 연락처는 010-1234-5678 입니다.",
                             elem_classes=["kpf-input"],
