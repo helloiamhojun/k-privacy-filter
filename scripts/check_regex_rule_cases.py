@@ -34,6 +34,16 @@ CASES = [
         "text": "메일은 test.user [at] example.com이고 좌표는 37.56650, 126.97800이고 프로필 url은 example.com/u/hojun입니다.",
         "must_mask": ["test.user [at] example.com", "37.56650, 126.97800", "example.com/u/hojun"],
     },
+    {
+        "id": "person_context_names",
+        "text": "내 이름은 최호준이고 수령자는 박서연 고객님입니다. 보호자 이지은에게 연락해.",
+        "must_mask": ["최호준", "박서연", "이지은"],
+    },
+    {
+        "id": "school_person_context",
+        "text": "담당 교사는 남궁민수입니다. 학생 오세훈이고 학번은 32215116입니다.",
+        "must_mask": ["남궁민수", "오세훈", "32215116"],
+    },
 ]
 
 
